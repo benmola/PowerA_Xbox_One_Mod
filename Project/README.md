@@ -24,8 +24,8 @@ Pico USB-C port  →  Controller (via micro-USB cable + USB-A OTG adapter)
 Pico GP4 (pin 6) →  USB-TTL adapter RX (debug serial output)
 Pico GND (pin 8) →  USB-TTL adapter GND
 Pico VSYS (pin 39) → 5V power source
-Pico GP6 (pin 9) →  NRF52840 RX (future: gamepad data)
-Pico GP7 (pin 10) → NRF52840 TX (future: gamepad data)
+Pico GP8 (pin 11) →  NRF52840 RX (future: gamepad data)
+Pico GP9 (pin 12) → NRF52840 TX (future: gamepad data)
 Pico GND         →  NRF52840 GND
 ```
 
@@ -121,4 +121,4 @@ pico_gamepad_host/
 ## Next Steps
 Once this works, the NRF52840 firmware (ESB transmitter + USB receiver) 
 is the next phase. The gamepad binary packets are already being sent on 
-UART1 (GP6/GP7) at 921600 baud in the format documented in the guide.
+UART1 (GP8/GP9) at 921600 baud in the format documented in the guide.
