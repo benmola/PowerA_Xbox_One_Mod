@@ -588,6 +588,14 @@ void gip_send_identify(uint8_t host_seq) {
   gip_state = GIP_STATE_IDENTIFIED;
   Serial.println("[GIP] sent IDENTIFY chunked response "
                  "(class=Windows.Xbox.Input.Gamepad)");
+
+  // Proactively send AUTH COMPLETE right after IDENTIFY.
+  // Without this, the host never receives auth confirmation and
+  // keeps retrying IDENTIFY, eventually falling back to POWER SLEEP
+  // (0x01) instead of POWER ON (0x00).  This technique is used by
+  // Mad Catz and other third-party controllers (xone madcatz_glam.c).
+  delay(50);
+  gip_send_auth_complete();
 }
 
 // ============================================================
@@ -998,9 +1006,7 @@ void loop() {
         gip_report_t report;
         report.command = GIP_CMD_INPUT;
         report.options = 0x00;
-        report.sequence = ++gip_seq; // incrementing sequence number
-        if (report.sequence == 0)
-          report.sequence = 1; // don't send seq=0 for inputs
+        report.sequence = gip_seq++; // incrementing sequence (post-increment, matches xone driver)
         report.length = 0x0E;
         report.btn1 = map_gip_btn1(c_buttons);
         report.btn2 = map_gip_btn2(c_buttons);
