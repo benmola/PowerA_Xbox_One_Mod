@@ -520,153 +520,55 @@ void gip_send_announce() {
 //  Total payload = 87 bytes, which exceeds the 64-byte USB FIFO.
 //  We write it in two FIFO-sized pieces, letting USB handle framing.
 // ============================================================
-void gip_send_identify() {
-  // IDENTIFY payload — 87 bytes
-  //
-  // xone's gip_handle_pkt_identify() does:
-  //   pkt = data;                          // pkt at byte 0
-  //   data += sizeof(pkt->unknown);        // data now at byte 16
-  //   len  -= sizeof(pkt->unknown);        // len = payload - 16
-  //
-  // Then gip_parse_info_element(data, len, offset, ...) reads data[offset].
-  // So ALL offsets are relative to byte 16 of the payload:
-  //   data[0..15]  = the offset table itself
-  //   data[16]     = byte 32 of payload = first data section byte
-  //   offset = 0   → "not present" (returns NULL)
-  //   offset = 16  → first byte after offset table
-  //
-  // No padding byte needed since offset 0 is just the "not present" sentinel.
-  static const uint8_t identify_payload[] = {
-      // ---- gip_pkt_identify struct (32 bytes) ----
-      // unknown[16]  (bytes 0–15)
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      // Offset table (bytes 16–31, each u16 LE, relative to byte 16)
-      0x00,
-      0x00, // client_commands_offset   = 0  (not present)
-      0x10,
-      0x00, // firmware_versions_offset = 16 → data[16] = byte 32
-      0x00,
-      0x00, // audio_formats_offset     = 0  (not present)
-      0x15,
-      0x00, // capabilities_out_offset  = 21 → data[21] = byte 37
-      0x17,
-      0x00, // capabilities_in_offset   = 23 → data[23] = byte 39
-      0x19,
-      0x00, // classes_offset           = 25 → data[25] = byte 41
-      0x36,
-      0x00, // interfaces_offset        = 54 → data[54] = byte 70
-      0x00,
-      0x00, // hid_descriptor_offset    = 0  (not present)
-      // ---- Data sections (byte 32+, data[16]+) ----
-      // [data[16], byte 32] Firmware versions: count=1, {major=3, minor=1}
-      0x01,
-      0x03,
-      0x00, // major = 3
-      0x01,
-      0x00, // minor = 1
-      // [data[21], byte 37] Capabilities out: count=1, flags
-      0x01,
-      0x1F, // standard gamepad output (buttons, triggers, sticks)
-      // [data[23], byte 39] Capabilities in: count=1, flags
-      0x01,
-      0x0F, // rumble motors (left, right, left trigger, right trigger)
-      // [data[25], byte 41] Classes: count=1, strlen=26 (LE), class string
-      0x01,
-      0x1A,
-      0x00, // string length = 26 (LE u16)
-      'W',
-      'i',
-      'n',
-      'd',
-      'o',
-      'w',
-      's',
-      '.',
-      'X',
-      'b',
-      'o',
-      'x',
-      '.',
-      'I',
-      'n',
-      'p',
-      'u',
-      't',
-      '.',
-      'G',
-      'a',
-      'm',
-      'e',
-      'p',
-      'a',
-      'd',
-      // [data[54], byte 70] Interfaces: count=1, one null GUID (16 bytes)
-      0x01,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
-      0x00,
+void gip_send_identify(uint8_t host_seq) {
+  uint8_t pkt0[64] = {
+    0x04, 0xF0, 0x00, 0x3A, 0xCA, 0x01, 0x10, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x00, 0xCA, 0x00, 0x8B, 0x00, 0x16, 0x00, 0x1F, 0x00, 0x20, 0x00, 0x27, 0x00,
+    0x2D, 0x00, 0x4A, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x01, 0x00, 0x00,
+    0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x06, 0x01, 0x02, 0x03, 0x04, 0x06, 0x07, 0x05, 0x01, 0x04,
   };
-  static_assert(sizeof(identify_payload) == 87,
-                "identify payload must be 87 bytes");
+  pkt0[2] = host_seq;
+  if (!gip_safe_write(pkt0, sizeof(pkt0), 500)) { Serial.println("[GIP] IDENTIFY chunk 0 dropped"); return; }
+  delay(40); // Required for timing on PC (xboxgip.sys drops fast packets)
 
-  // GIP header: cmd=0x04, options=0x20 (INTERNAL), sequence, varint length
-  uint8_t hdr[4] = {
-      GIP_CMD_IDENTIFY,
-      GIP_OPT_INTERNAL,                  // options = 0x20 (internal command)
-      ++gip_seq,                         // sequence (non-zero for reliability)
-      (uint8_t)sizeof(identify_payload), // 87 < 128, fits in 1-byte varint
+  uint8_t pkt1[64] = {
+    0x04, 0xA0, 0x00, 0xBA, 0x00, 0x3A, 0x05, 0x06, 0x0A, 0x01, 0x1A, 0x00, 0x57, 0x69, 0x6E, 0x64,
+    0x6F, 0x77, 0x73, 0x2E, 0x58, 0x62, 0x6F, 0x78, 0x2E, 0x49, 0x6E, 0x70, 0x75, 0x74, 0x2E, 0x47,
+    0x61, 0x6D, 0x65, 0x70, 0x61, 0x64, 0x04, 0x56, 0xFF, 0x76, 0x97, 0xFD, 0x9B, 0x81, 0x45, 0xAD,
+    0x45, 0xB6, 0x45, 0xBB, 0xA5, 0x26, 0xD6, 0x2C, 0x40, 0x2E, 0x08, 0xDF, 0x07, 0xE1, 0x45, 0xA5,
   };
+  pkt1[2] = host_seq;
+  if (!gip_safe_write(pkt1, sizeof(pkt1), 500)) { Serial.println("[GIP] IDENTIFY chunk 1 dropped"); return; }
+  delay(40);
 
-  // Build full packet: header + payload = 4 + 87 = 91 bytes
-  uint8_t pkt[4 + sizeof(identify_payload)];
-  memcpy(pkt, hdr, 4);
-  memcpy(pkt + 4, identify_payload, sizeof(identify_payload));
+  uint8_t pkt2[64] = {
+    0x04, 0xA0, 0x00, 0xBA, 0x00, 0x74, 0xAB, 0xA3, 0x12, 0x7A, 0xF1, 0x97, 0xB5, 0xE7, 0x1F, 0xF3,
+    0xB8, 0x86, 0x73, 0xE9, 0x40, 0xA9, 0xF8, 0x2F, 0x21, 0x26, 0x3A, 0xCF, 0xB7, 0xFE, 0xD2, 0xDD,
+    0xEC, 0x87, 0xD3, 0x94, 0x42, 0xBD, 0x96, 0x1A, 0x71, 0x2E, 0x3D, 0xC7, 0x7D, 0x02, 0x17, 0x00,
+    0x20, 0x20, 0x00, 0x01, 0x00, 0x10, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+  };
+  pkt2[2] = host_seq;
+  if (!gip_safe_write(pkt2, sizeof(pkt2), 500)) { Serial.println("[GIP] IDENTIFY chunk 2 dropped"); return; }
+  delay(40);
 
-  // Write to FIFO in two pieces (FIFO is 64 bytes max)
-  uint32_t first = 64;
-  uint32_t second = sizeof(pkt) - first; // 27 bytes
+  uint8_t pkt3[34] = {
+    0x04, 0xB0, 0x00, 0x1C, 0xAE, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x17, 0x00, 0x09, 0x3C, 0x00,
+    0x01, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x00,
+  };
+  pkt3[2] = host_seq;
+  if (!gip_safe_write(pkt3, sizeof(pkt3), 500)) { Serial.println("[GIP] IDENTIFY chunk 3 dropped"); return; }
+  delay(40);
 
-  if (!gip_safe_write(pkt, first, 500)) {
-    Serial.println("[GIP] IDENTIFY part1 dropped");
-    return;
-  }
-  // Wait for first piece to drain, then write remainder
-  if (!gip_safe_write(pkt + first, second, 500)) {
-    Serial.println("[GIP] IDENTIFY part2 dropped");
-    return;
-  }
+  uint8_t pkt4[6] = {
+    0x04, 0xA0, 0x00, 0x00, 0xCA, 0x01,
+  };
+  pkt4[2] = host_seq;
+  if (!gip_safe_write(pkt4, sizeof(pkt4), 500)) { Serial.println("[GIP] IDENTIFY chunk 4 dropped"); return; }
+  delay(40);
 
   gip_state = GIP_STATE_IDENTIFIED;
-  Serial.println(
-      "[GIP] sent IDENTIFY response (class=Windows.Xbox.Input.Gamepad)");
+  Serial.println("[GIP] sent IDENTIFY chunked response (class=Windows.Xbox.Input.Gamepad)");
 }
 
 // ============================================================
@@ -731,7 +633,7 @@ void gip_handle_rx() {
       // Respond with IDENTIFY data (class, interfaces, versions).
       Serial.println(
           "[GIP] IDENTIFY REQUEST (0x04) — sending capability descriptor");
-      gip_send_identify();
+      gip_send_identify(host_seq);
 
     } else if (host_cmd == GIP_CMD_POWER) {
       // 0x05 — Host sends power mode.  Payload[0] = mode:
@@ -744,7 +646,7 @@ void gip_handle_rx() {
       uint8_t ack[7] = {GIP_CMD_ACK, GIP_OPT_INTERNAL, ++gip_seq, 0x03,
                         host_seq,    host_cmd,         0x00};
       gip_safe_write(ack, sizeof(ack), 50);
-      if (mode == 0x00 || mode == 0xFF) {
+      if (mode == 0x00 || mode == 0x04 || mode == 0xFF) {
         gip_state = GIP_STATE_READY;
         Serial.println("[GIP] state → READY (input enabled)");
       }
