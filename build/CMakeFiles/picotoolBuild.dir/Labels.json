@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild-complete.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule"
+		},
+		{
+			"file" : "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"picotoolBuild"
+		],
+		"name" : "picotoolBuild"
+	}
+}

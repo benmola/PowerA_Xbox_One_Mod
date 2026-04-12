@@ -355,8 +355,8 @@ int main(void) {
                     gamepad.right_x, gamepad.right_y);
             }
 
-            // Binary packets disabled during debug — re-enable for production
-            // uart_send_to_nrf();
+            // Send binary packet to NRF52840 for radio transmission
+            uart_send_to_nrf();
         }
     }
 

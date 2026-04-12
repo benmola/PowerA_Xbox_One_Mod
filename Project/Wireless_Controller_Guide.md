@@ -336,7 +336,7 @@ Note: The controller needs 5V but may work at 3.3V. Test first. If not, add a ti
                           │          │ USB-C port ─────────│──► Controller
     5V Power Source       │          │  (via OTG adapter)  │     (USB-A)
     ┌──────────────┐      │          │                     │
-    │ 5V ──────────│──────│──────────│ VSYS (pin 39)       │
+    │ 5V ──────────│──────│──────────│ VBUS (pin 40)       │
     │ GND ─────────│──────┘          │                     │
     └──────────────┘                 │ GP8 (pin 11) TX ────│──┐
                                      │ GP9 (pin 12) RX ────│──│──┐
@@ -347,7 +347,7 @@ Note: The controller needs 5V but may work at 3.3V. Test first. If not, add a ti
                               ┌─────────────────────┐         │  │  │
                    PC USB ───►│ USB-C (power+debug) │         │  │  │
                               │                     │         │  │  │
-                              │ P0.08 (RX) ─────────│─────────┘  │  │
+                              │ P0.22 (RX) ─────────│─────────┘  │  │
                               │ P0.06 (TX) ─────────│────────────┘  │
                               │ GND ────────────────│───────────────┘
                               │                     │

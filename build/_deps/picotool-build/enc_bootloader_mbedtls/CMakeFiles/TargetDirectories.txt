@@ -1,0 +1,2 @@
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/edit_cache.dir
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/rebuild_cache.dir

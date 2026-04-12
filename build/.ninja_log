@@ -1,0 +1,418 @@
+# ninja log v7
+15	53	7975181371473247	CMakeFiles/picotoolForceReconfigure	868fe4a0c8d65d20
+15	53	7975181371473247	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolForceReconfigure	868fe4a0c8d65d20
+22	97	7975181371536702	pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj	519c80f6cf434804
+53	116	7975181372399466	picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir	f18ed79cfa1ac37b
+53	116	7975181372399466	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir	f18ed79cfa1ac37b
+116	172	7975181372983197	picotool/src/picotoolBuild-stamp/picotoolBuild-download	5fa6bcc1596a0901
+116	172	7975181372983197	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download	5fa6bcc1596a0901
+99	211	7975181373379395	pico-sdk/src/rp2040/boot_stage2/bs2_default.elf	83f215512d296224
+99	211	7975181373379395	pico-sdk/src/rp2040/boot_stage2/bs2_default.dis	83f215512d296224
+99	211	7975181373379395	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.dis	83f215512d296224
+173	226	7975181373520553	picotool/src/picotoolBuild-stamp/picotoolBuild-update	ab3c3e6002805541
+173	226	7975181373520553	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update	ab3c3e6002805541
+211	238	7975181373665917	pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	55a5cdfdeaf39790
+211	238	7975181373665917	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin	55a5cdfdeaf39790
+226	282	7975181374078089	picotool/src/picotoolBuild-stamp/picotoolBuild-patch	a545bf1b14b362bc
+226	282	7975181374078089	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch	a545bf1b14b362bc
+238	330	7975181374531579	pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	304891a44f9a3650
+238	330	7975181374531579	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S	304891a44f9a3650
+330	382	7975181374623257	pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.obj	8140b995c7536e4e
+282	2236	7975181393625370	picotool/src/picotoolBuild-stamp/picotoolBuild-configure	e6c0289f9e5c5bb8
+282	2236	7975181393625370	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure	e6c0289f9e5c5bb8
+2236	34949	7975181393681595	picotool/src/picotoolBuild-stamp/picotoolBuild-build	9e6eb6df9d1905e9
+2236	34949	7975181393681595	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build	9e6eb6df9d1905e9
+34949	35243	7975181720834920	picotool/src/picotoolBuild-stamp/picotoolBuild-install	636fb7edf2ef7b3
+34949	35243	7975181720834920	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install	636fb7edf2ef7b3
+35243	35294	7975181724228980	picotool/src/picotoolBuild-stamp/picotoolBuild-test	aa77adcaae551d1d
+35243	35294	7975181724228980	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test	aa77adcaae551d1d
+35294	35361	7975181724905989	CMakeFiles/picotoolBuild-complete	e831691e5fd0c0b3
+35294	35361	7975181724905989	picotool/src/picotoolBuild-stamp/picotoolBuild-done	e831691e5fd0c0b3
+35294	35361	7975181724905989	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild-complete	e831691e5fd0c0b3
+35294	35361	7975181724905989	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-done	e831691e5fd0c0b3
+35375	35515	7975181725084669	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2040/pico_platform/platform.c.obj	5ecd9049167b600b
+35365	35521	7975181724993398	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj	9493cd1bea34d03f
+35515	35598	7975181726487112	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_platform_common/common.c.obj	ce8a3216104c707c
+35521	35660	7975181726551528	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj	7a6fa8961f53282a
+35370	35752	7975181725036741	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj	ff1c803a0af4f98c
+7	925	7975203088948404	build.ninja	2e651e19442ff3d4
+7	925	7975203088172657	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088182712	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088182712	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/tools/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088192752	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088202786	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_picobin_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088212887	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_picoboot_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088222944	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_uf2_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088222944	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_base_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088233498	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_usb_reset_interface_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088233498	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_bit_ops_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088244624	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_binary_info/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088244624	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_divider_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088254598	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_sync/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088264748	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_time/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088264748	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_util/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088275461	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_stdlib_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088275461	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/hardware_claim/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088285495	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/pico_platform/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088285495	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088296929	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088307464	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/boot_stage2/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088317569	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_base/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088327604	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_adc/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088327604	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_boot_lock/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088337980	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_clocks/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088337980	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_divider/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088348450	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_dma/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088348450	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_exception/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088358828	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_flash/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088358828	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_gpio/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088369300	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_i2c/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088369300	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_interp/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088379529	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_irq/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088379529	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pio/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088389985	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pll/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088400082	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pwm/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088400082	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_resets/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088410211	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_rtc/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088410211	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_spi/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088420347	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_sync/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088420347	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_sync_spin_lock/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088430841	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_ticks/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088430841	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_timer/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088441017	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_uart/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088441017	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_vreg/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088451866	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_watchdog/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088451866	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_xip_cache/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088461952	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_xosc/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088461952	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/boot_bootrom_headers/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088472409	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_common/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088472409	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_compiler/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088484678	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_sections/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088484678	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_panic/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088494760	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_aon_timer/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088494760	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bootrom/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088505237	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088505237	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_multicore/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088516128	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_unique_id/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088516128	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_atomic/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088526533	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bit_ops/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088526533	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_divider/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088537360	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_double/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088551959	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_int64_ops/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088562766	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_flash/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088572828	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_float/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088583003	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_mem_ops/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088583003	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_malloc/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088593033	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_printf/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088602991	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_rand/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088612964	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_semihosting/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088612964	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_uart/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088622933	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_rtt/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088632914	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/cmsis/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088642887	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/tinyusb/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088652862	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_usb/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088662826	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_i2c_slave/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088672807	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_async_context/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088672807	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_btstack/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088702724	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088712704	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088722715	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_mbedtls/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088732653	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_lwip/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088742626	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_lwip/tools/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088742626	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_arch/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088752599	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_time_adapter/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088752599	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_crt0/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088762574	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_clib_interface/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088772544	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cxx_options/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088772544	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_standard_binary_info/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088782518	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_standard_link/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088782518	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_fix/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088792492	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088802463	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_status_led/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088802463	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_runtime_init/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088812439	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_runtime/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088822413	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088822413	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdlib/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088832387	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/docs/cmake_install.cmake	2e651e19442ff3d4
+7	925	7975203088832387	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/xinput_host/cmake_install.cmake	2e651e19442ff3d4
+48	166	7975181738859947	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj	5f8e9af9ce80d7a2
+42	179	7975181738801610	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj	ffb07d58bcb1d5bb
+38	203	7975181738762797	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/hardware_claim/claim.c.obj	53c218c1e3f713d0
+180	254	7975181740183616	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	9d63782b0ae5b356
+204	364	7975181740419922	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_sync/sem.c.obj	2e45d7fba7d4803f
+167	429	7975181740052177	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj	70ff2be2fb23aaff
+47	180	7975181755276467	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_sync/lock_core.c.obj	7ba2ae5959a60d29
+59	197	7975181755396133	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_sync/critical_section.c.obj	aef17dfdf07529df
+197	314	7975181756769698	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_time/timeout_helper.c.obj	c32c35bb174a7e07
+53	318	7975181755326316	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_sync/mutex.c.obj	97b9ddbbcf33b5c0
+180	608	7975181756601467	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_time/time.c.obj	c83d087504ff7127
+41	255	7975181838793085	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_util/datetime.c.obj	b937a448ee0889c3
+37	371	7975181838752825	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj	c5b1234a3bfd0600
+47	375	7975181838850109	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_util/pheap.c.obj	e4f3037d7031f249
+40	227	7975182956119234	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj	62f84b98c1810281
+35	241	7975182956074524	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/common/pico_util/queue.c.obj	e21e03a17404f96
+29	291	7975182956017410	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+241	342	7975182958134717	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj	6c9ecc54e30cfc15
+227	349	7975182957992314	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj	706ce91d519462fe
+45	410	7975182956170604	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj	cc30793d313e9602
+342	442	7975182959144552	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj	2c457d3fbf7eeece
+292	475	7975182958641137	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj	eae0470252856363
+349	502	7975182959210505	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj	3aca03ec6419c5fb
+410	509	7975182959816623	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj	72a23c9b09c99366
+442	538	7975182960138045	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj	1a11ad9cf96aea3c
+509	574	7975182960814097	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj	d9ab1ce6273439db
+475	616	7975182960473210	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_flash/flash.c.obj	efb817d13a93053d
+503	623	7975182960744263	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj	b74efa0043901ff7
+538	664	7975182961108158	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj	36363fce890be720
+664	738	7975182962361306	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj	bc3c7104a45e56cc
+574	743	7975182961464180	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj	a1e8e62528e74e57
+623	748	7975182961957402	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj	69bfc6bbe9249938
+616	763	7975182961887416	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj	56b6f985f17344bc
+738	810	7975182963097821	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj	3ef3210a8d11693b
+33	114	7975183047869840	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj	210b35ee3ba032
+50	126	7975183048040705	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj	c71570dc3a947eab
+114	181	7975183048684389	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj	b5552e722f5f5bd3
+39	187	7975183047929784	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj	6c523c48d23f236
+127	203	7975183048801717	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj	61f6aad1311df99d
+203	271	7975183049568467	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj	ceb3be641ff9da75
+181	304	7975183049346062	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj	485acbc52338fcca
+304	372	7975183050579801	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj	c46c53fecaf15838
+271	411	7975183050252918	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj	8297702cbf29cec1
+411	572	7975183051652605	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj	34ece26145ea1d2a
+573	673	7975183053261854	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj	26bb541f7eb0a9b3
+372	695	7975183051256216	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj	7d5706400c8e373a
+45	703	7975183047985021	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_double/double_math.c.obj	bd1adaa607a25599
+187	710	7975183049408878	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_float/float_math.c.obj	30629c5fd1e2cc3
+695	772	7975183054484925	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj	572fddf14b376f19
+703	906	7975183054577435	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj	e04dcbbd0161e133
+772	975	7975183055259089	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj	78d2440bcb440c34
+710	1030	7975183054638044	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj	843a5928867378d4
+907	1151	7975183056609385	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj	7ff7e23888255ae
+1030	1287	7975183057832137	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj	d7c194bf0dc90db6
+674	1311	7975183054271389	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_printf/printf.c.obj	24f9d2dbc607014c
+1287	1358	7975183060409488	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/host/hub.c.obj	c3cb53ada9c54427
+975	1374	7975183057290361	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj	ec7b69c8841df79b
+1311	1383	7975183060644909	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_host.c.obj	ca7119723105d5fd
+1358	1429	7975183061123021	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/hid/hid_host.c.obj	8d4c6e9facbf5cdd
+1374	1456	7975183061283568	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/msc/msc_host.c.obj	f5203ead076264cc
+1383	1462	7975183061370953	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_host.c.obj	1107cb063dc6e90e
+1462	1680	7975183062154278	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj	31021e48ffb7447c
+1429	1716	7975183061828760	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/tusb.c.obj	ad6ccb9cf47d5bfc
+1680	1827	7975183064340730	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj	d12a0f966bf18809
+1456	1836	7975183062101671	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	3d64fcbc44a48599
+1828	1936	7975183065820880	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.obj	7d4000eae3482fc0
+1716	1937	7975183064698619	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj	1471cccb8bf13270
+1151	2095	7975183059044872	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/host/usbh.c.obj	f3618c1b234f1e6d
+41	529	7975184960667908	CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj	16dea0aee7754e0
+35	316	7975185409126248	pico_gamepad_host.elf	c0bea40a41357b74
+35	316	7975185409126248	pico_gamepad_host.dis	c0bea40a41357b74
+35	316	7975185409126248	pico_gamepad_host.hex	c0bea40a41357b74
+35	316	7975185409126248	pico_gamepad_host.bin	c0bea40a41357b74
+35	316	7975185409126248	pico_gamepad_host.uf2	c0bea40a41357b74
+35	316	7975185409126248	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+35	316	7975185409126248	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+35	316	7975185409126248	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+35	316	7975185409126248	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+14	886	7975203088948404	build.ninja	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/tools/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_picobin_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_picoboot_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/boot_uf2_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_base_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_usb_reset_interface_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_bit_ops_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_binary_info/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_divider_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_sync/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_time/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_util/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/pico_stdlib_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/common/hardware_claim/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/pico_platform/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/hardware_regs/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/hardware_structs/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2040/boot_stage2/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_base/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_adc/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_boot_lock/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_clocks/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_divider/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_dma/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_exception/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_flash/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_gpio/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_i2c/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_interp/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_irq/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pio/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pll/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_pwm/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_resets/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_rtc/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_spi/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_sync/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_sync_spin_lock/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_ticks/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_timer/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_uart/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_vreg/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_watchdog/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_xip_cache/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/hardware_xosc/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/boot_bootrom_headers/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_common/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_compiler/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_sections/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_platform_panic/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_aon_timer/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bootrom/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_multicore/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_unique_id/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_atomic/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_bit_ops/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_divider/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_double/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_int64_ops/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_flash/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_float/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_mem_ops/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_malloc/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_printf/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_rand/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_semihosting/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_uart/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_rtt/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/cmsis/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/tinyusb/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio_usb/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_i2c_slave/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_async_context/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_btstack/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_mbedtls/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_lwip/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_lwip/tools/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_arch/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_time_adapter/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_crt0/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_clib_interface/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cxx_options/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_standard_binary_info/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_standard_link/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_fix/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_status_led/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_runtime_init/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_runtime/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdio/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_stdlib/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/docs/cmake_install.cmake	2e651e19442ff3d4
+14	886	7975203088948404	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/xinput_host/cmake_install.cmake	2e651e19442ff3d4
+47	295	7975203090127840	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+295	568	7975203095273125	pico_gamepad_host.elf	c0bea40a41357b74
+295	568	7975203095273125	pico_gamepad_host.dis	c0bea40a41357b74
+295	568	7975203095273125	pico_gamepad_host.hex	c0bea40a41357b74
+295	568	7975203095273125	pico_gamepad_host.bin	c0bea40a41357b74
+295	568	7975203095273125	pico_gamepad_host.uf2	c0bea40a41357b74
+295	568	7975203095273125	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+295	568	7975203095273125	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+295	568	7975203095273125	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+295	568	7975203095273125	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+32	255	7975207151047221	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+255	520	7975207155863443	pico_gamepad_host.elf	c0bea40a41357b74
+255	520	7975207155863443	pico_gamepad_host.dis	c0bea40a41357b74
+255	520	7975207155863443	pico_gamepad_host.hex	c0bea40a41357b74
+255	520	7975207155863443	pico_gamepad_host.bin	c0bea40a41357b74
+255	520	7975207155863443	pico_gamepad_host.uf2	c0bea40a41357b74
+255	520	7975207155863443	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+255	520	7975207155863443	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+255	520	7975207155863443	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+255	520	7975207155863443	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+32	282	7975218219683443	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+42	322	7975218219779044	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj	d7c194bf0dc90db6
+283	353	7975218222175658	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/host/hub.c.obj	c3cb53ada9c54427
+322	389	7975218222576476	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/cdc/cdc_host.c.obj	ca7119723105d5fd
+353	419	7975218222891368	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/hid/hid_host.c.obj	8d4c6e9facbf5cdd
+38	425	7975218219734709	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj	ec7b69c8841df79b
+389	460	7975218223240221	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/msc/msc_host.c.obj	f5203ead076264cc
+419	488	7975218223539636	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/class/vendor/vendor_host.c.obj	1107cb063dc6e90e
+425	694	7975218223602498	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/tusb.c.obj	ad6ccb9cf47d5bfc
+488	700	7975218224235064	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj	31021e48ffb7447c
+460	806	7975218223960165	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	3d64fcbc44a48599
+46	944	7975218219808963	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/tinyusb/src/host/usbh.c.obj	f3618c1b234f1e6d
+694	1169	7975218226297209	CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj	16dea0aee7754e0
+1170	1451	7975218233780869	pico_gamepad_host.elf	c0bea40a41357b74
+1170	1451	7975218233780869	pico_gamepad_host.dis	c0bea40a41357b74
+1170	1451	7975218233780869	pico_gamepad_host.hex	c0bea40a41357b74
+1170	1451	7975218233780869	pico_gamepad_host.bin	c0bea40a41357b74
+1170	1451	7975218233780869	pico_gamepad_host.uf2	c0bea40a41357b74
+1170	1451	7975218233780869	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+1170	1451	7975218233780869	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+1170	1451	7975218233780869	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+1170	1451	7975218233780869	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+33	261	7975225544270048	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+262	522	7975225549102846	pico_gamepad_host.elf	c0bea40a41357b74
+262	522	7975225549102846	pico_gamepad_host.dis	c0bea40a41357b74
+262	522	7975225549102846	pico_gamepad_host.hex	c0bea40a41357b74
+262	522	7975225549102846	pico_gamepad_host.bin	c0bea40a41357b74
+262	522	7975225549102846	pico_gamepad_host.uf2	c0bea40a41357b74
+262	522	7975225549102846	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+262	522	7975225549102846	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+262	522	7975225549102846	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+262	522	7975225549102846	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+34	264	7975230146307229	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+39	507	7975230146362514	CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj	16dea0aee7754e0
+507	793	7975230153836213	pico_gamepad_host.elf	c0bea40a41357b74
+507	793	7975230153836213	pico_gamepad_host.dis	c0bea40a41357b74
+507	793	7975230153836213	pico_gamepad_host.hex	c0bea40a41357b74
+507	793	7975230153836213	pico_gamepad_host.bin	c0bea40a41357b74
+507	793	7975230153836213	pico_gamepad_host.uf2	c0bea40a41357b74
+507	793	7975230153836213	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+507	793	7975230153836213	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+507	793	7975230153836213	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+507	793	7975230153836213	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+34	270	7975234445668052	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+271	548	7975234450733065	pico_gamepad_host.elf	c0bea40a41357b74
+271	548	7975234450733065	pico_gamepad_host.dis	c0bea40a41357b74
+271	548	7975234450733065	pico_gamepad_host.hex	c0bea40a41357b74
+271	548	7975234450733065	pico_gamepad_host.bin	c0bea40a41357b74
+271	548	7975234450733065	pico_gamepad_host.uf2	c0bea40a41357b74
+271	548	7975234450733065	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+271	548	7975234450733065	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+271	548	7975234450733065	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+271	548	7975234450733065	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+33	309	7975239452829250	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+310	584	7975239458263040	pico_gamepad_host.elf	c0bea40a41357b74
+310	584	7975239458263040	pico_gamepad_host.dis	c0bea40a41357b74
+310	584	7975239458263040	pico_gamepad_host.hex	c0bea40a41357b74
+310	584	7975239458263040	pico_gamepad_host.bin	c0bea40a41357b74
+310	584	7975239458263040	pico_gamepad_host.uf2	c0bea40a41357b74
+310	584	7975239458263040	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+310	584	7975239458263040	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+310	584	7975239458263040	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+310	584	7975239458263040	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+37	292	7975360513378067	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+292	568	7975360518637197	pico_gamepad_host.elf	c0bea40a41357b74
+292	568	7975360518637197	pico_gamepad_host.dis	c0bea40a41357b74
+292	568	7975360518637197	pico_gamepad_host.hex	c0bea40a41357b74
+292	568	7975360518637197	pico_gamepad_host.bin	c0bea40a41357b74
+292	568	7975360518637197	pico_gamepad_host.uf2	c0bea40a41357b74
+292	568	7975360518637197	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+292	568	7975360518637197	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+292	568	7975360518637197	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+292	568	7975360518637197	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74
+32	291	7975372104687686	CMakeFiles/pico_gamepad_host.dir/main.c.obj	1056c47ae30c7764
+291	538	7975372109686012	pico_gamepad_host.elf	c0bea40a41357b74
+291	538	7975372109686012	pico_gamepad_host.dis	c0bea40a41357b74
+291	538	7975372109686012	pico_gamepad_host.hex	c0bea40a41357b74
+291	538	7975372109686012	pico_gamepad_host.bin	c0bea40a41357b74
+291	538	7975372109686012	pico_gamepad_host.uf2	c0bea40a41357b74
+291	538	7975372109686012	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.dis	c0bea40a41357b74
+291	538	7975372109686012	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.hex	c0bea40a41357b74
+291	538	7975372109686012	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.bin	c0bea40a41357b74
+291	538	7975372109686012	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico_gamepad_host.uf2	c0bea40a41357b74

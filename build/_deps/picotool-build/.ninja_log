@@ -1,0 +1,146 @@
+# ninja log v7
+6	115	7975181394850108	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-mkdir	6269ea0978d88b78
+6	115	7975181394850108	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-mkdir	6269ea0978d88b78
+14	141	7975181395363949	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-mkdir	87b4ede3ac8ae22e
+14	141	7975181395363949	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-mkdir	87b4ede3ac8ae22e
+61	270	7975181394660608	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ccm.c.obj	4ede742237fb8fd
+32	277	7975181394367210	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/aria.c.obj	811a48fa127a8eea
+115	282	7975181396526099	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-download	f457ff7c17794c11
+115	282	7975181396526099	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-download	f457ff7c17794c11
+70	293	7975181394750370	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/chachapoly.c.obj	2cb6c5c7bbf1634e
+66	325	7975181394710474	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/chacha20.c.obj	dbc2f128867559f9
+141	382	7975181397478801	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-download	46bfed6522777d14
+141	382	7975181397478801	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-download	46bfed6522777d14
+28	567	7975181394333916	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/aesni.c.obj	fc8d4ca0640256b4
+47	598	7975181394520986	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/base64.c.obj	d3ab13983dc19045
+282	693	7975181400311853	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-update	cec0131b3d37ae5b
+282	693	7975181400311853	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-update	cec0131b3d37ae5b
+325	735	7975181397304107	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/cmac.c.obj	5d222a8d522c1829
+277	754	7975181396815339	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/cipher_wrap.c.obj	acac3876fd2ee759
+382	759	7975181401174764	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-update	55dc9071d9a893ac
+382	759	7975181401174764	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-update	55dc9071d9a893ac
+293	925	7975181396974922	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/constant_time.c.obj	e5e952c7d6a2c2ab
+37	936	7975181394413887	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/asn1parse.c.obj	c9b7c6ec0e7f9daf
+598	967	7975181400032552	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/des.c.obj	7de3eca087a4c23f
+43	975	7975181394471104	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/asn1write.c.obj	eaa2b4f31c988049
+56	1037	7975181394620722	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/camellia.c.obj	97610b5f23bc2a56
+271	1095	7975181396755504	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/cipher.c.obj	3b722952da141c5d
+693	1100	7975181404476847	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-patch	1c90cff0bf2f0adc
+693	1100	7975181404476847	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-patch	1c90cff0bf2f0adc
+20	1112	7975181394243667	errors/CMakeFiles/errors.dir/errors.cpp.obj	9bc7806f8b5f16c
+735	1118	7975181401399364	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/dhm.c.obj	b173383a86693c38
+754	1123	7975181401588863	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ecdh.c.obj	b32867910dda5da4
+760	1134	7975181404885778	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-patch	e7635d4ae681869
+760	1134	7975181404885778	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-patch	e7635d4ae681869
+567	1194	7975181399713379	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ctr_drbg.c.obj	70a3293027c7de2e
+936	1200	7975181403404467	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ecjpake.c.obj	7708642d414cad63
+1118	1436	7975181405224925	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/gcm.c.obj	ed8d228a78d6c50e
+1123	1616	7975181405284778	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/hkdf.c.obj	2f1c5d7f2d4e8872
+926	1622	7975181403309572	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ecdsa.c.obj	903efb0a5a5713dc
+1113	1654	7975181405175024	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/error.c.obj	459c049764fc3255
+24	1715	7975181394282404	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/aes.c.obj	dfc1e939cdb04e7f
+1037	1832	7975181404426994	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/entropy.c.obj	33d0257dd79c49a6
+1195	1850	7975181405998051	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/hmac_drbg.c.obj	3f8faa41e187e2fd
+1617	1933	7975181410217800	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/memory_buffer_alloc.c.obj	8b94e012ba2e475a
+1622	1938	7975181410267664	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/mps_reader.c.obj	9cf8f5376db6b20d
+1200	2026	7975181406047932	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/md.c.obj	adb126605297643e
+1654	2066	7975181410591965	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/mps_trace.c.obj	bea67fd39b60e890
+1715	2108	7975181411200371	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/nist_kw.c.obj	bbaf023d17bff1f2
+1851	2148	7975181412557202	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/padlock.c.obj	d2689268610d49eb
+1436	2160	7975181408407290	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/md5.c.obj	a7fa93a69d7981ca
+976	2326	7975181403803436	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ecp_curves.c.obj	c840e55aea30255
+1933	2541	7975181413380258	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pem.c.obj	74f5a5b34863ff45
+1938	2559	7975181413440094	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pk.c.obj	5cf0ec33452ad66e
+2026	2632	7975181414307887	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pk_wrap.c.obj	5d582b47742e3bb4
+1832	2659	7975181412367700	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/oid.c.obj	fab4488b94354160
+2108	2727	7975181415130910	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pkcs5.c.obj	dde2408439cbebd0
+2326	2748	7975181417315617	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/platform.c.obj	8abf0df6070cb02c
+2160	2785	7975181415654740	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pkwrite.c.obj	286fc371c492e89f
+2066	2794	7975181414712012	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pkcs12.c.obj	32a8d492403fde36
+967	2883	7975181403723660	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ecp.c.obj	ecbf59cd34fb945e
+2148	2889	7975181415535054	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pkparse.c.obj	55f6c69c67d794d4
+2632	2941	7975181420378370	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto.c.obj	b5f463bfaf1858a4
+2659	3007	7975181420637718	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_aead.c.obj	2d2c929221b6417e
+2727	3039	7975181421325945	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_cipher.c.obj	9d737c5100ca38df
+51	3069	7975181394560871	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/bignum.c.obj	428473a5b498098a
+2785	3093	7975181421899589	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_ecp.c.obj	5fc217bb6763ebf4
+2748	3108	7975181421530544	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_client.c.obj	9d77bd86b1b738d8
+2794	3113	7975181421989351	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_hash.c.obj	dfa7ac9ffb9e066f
+2884	3122	7975181422882189	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_mac.c.obj	8e6046a498ac49e8
+2941	3145	7975181423465844	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_se.c.obj	def7cb23fab7d3d2
+2889	3154	7975181422942034	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_rsa.c.obj	7a491db197b213bd
+2559	3160	7975181419645118	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/poly1305.c.obj	f0e1a6543a4d102d
+3007	3220	7975181424124132	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_slot_management.c.obj	22954d109c54f2d9
+3039	3332	7975181424438453	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_crypto_storage.c.obj	a84c2a756f522013
+3094	3364	7975181424987022	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/ripemd160.c.obj	d436b030058ec67f
+3069	3369	7975181424737669	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/psa_its_file.c.obj	92d0e1da843d433f
+3108	3391	7975181425126660	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/rsa.c.obj	95710bf8292d5e83
+3155	3437	7975181425600577	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/threading.c.obj	d68506d9286f47d2
+3220	3500	7975181426248915	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/version.c.obj	6c99b1efc0ca692
+1095	3633	7975181404995494	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/entropy_poll.c.obj	c778fbe63f03369c
+3332	3665	7975181427371150	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/version_features.c.obj	94d17025f12c0c62
+3369	3770	7975181427745310	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/rsa_alt_helpers.c.obj	f100fe85bdc7d15f
+3391	3815	7975181427964737	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/pk_ecc.c.obj	f0ae326d3bfec98f
+3145	3856	7975181425500842	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/sha512.c.obj	9055b6cc4eca60c8
+3437	3867	7975181428418726	errors/liberrors.a	f0ed17b332ca2b8
+3122	3884	7975181425276290	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/sha256.c.obj	362f86ad0e456253
+3113	3948	7975181425186500	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/sha1.c.obj	a312bcbcfad077f7
+3770	4171	7975181431755619	bintool/CMakeFiles/bintool.dir/mbedtls_wrapper.c.obj	ab66a0a282769715
+3364	4269	7975181427685468	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/bignum_core.c.obj	24caa17b4a1a4ca8
+2541	4547	7975181419465596	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/platform_util.c.obj	8c9bc2f6e0bc79b0
+3160	5016	7975181425650454	lib/CMakeFiles/mbedtls.dir/G_/PowerA_Controller_Project/files/pico-workspace/pico-sdk/lib/mbedtls/library/timing.c.obj	8b148fab71c5c07b
+5016	5264	7975181444209825	lib/libmbedtls.a	6676184f643b044c
+1134	5479	7975181448768128	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-configure	30bf59d12a8b768d
+1134	5479	7975181448768128	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-configure	30bf59d12a8b768d
+1100	5532	7975181449294208	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-configure	f2ead3ede0edd5bf
+1100	5532	7975181449294208	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-configure	f2ead3ede0edd5bf
+5479	5540	7975181448843028	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-build	d057c46173f3a939
+5479	5540	7975181448843028	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-build	d057c46173f3a939
+5540	5584	7975181449453147	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-install	3bc2f5a807ed5735
+5540	5584	7975181449453147	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-install	3bc2f5a807ed5735
+5532	5598	7975181449377359	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-build	32a7100038e3d013
+5532	5598	7975181449377359	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-build	32a7100038e3d013
+5598	5638	7975181450033221	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-install	68c662ab9edaeef5
+5598	5638	7975181450033221	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-install	68c662ab9edaeef5
+5584	5674	7975181450713276	CMakeFiles/enc_bootloader_mbedtls-complete	9fb06f6906a7abdd
+5584	5674	7975181450713276	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-done	9fb06f6906a7abdd
+5584	5674	7975181450713276	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/CMakeFiles/enc_bootloader_mbedtls-complete	9fb06f6906a7abdd
+5584	5674	7975181450713276	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-done	9fb06f6906a7abdd
+5638	5722	7975181451208216	CMakeFiles/enc_bootloader-complete	32bb1eb235837320
+5638	5722	7975181451208216	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-done	32bb1eb235837320
+5638	5722	7975181451208216	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/CMakeFiles/enc_bootloader-complete	32bb1eb235837320
+5638	5722	7975181451208216	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-done	32bb1eb235837320
+5722	5939	7975181453357074	enc_bootloader_elf.h	8afecde7a3159ac2
+5722	5939	7975181453357074	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_elf.h	8afecde7a3159ac2
+3635	5953	7975181430388846	elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.obj	e6f11043d08ec41d
+5729	6056	7975181454551081	enc_bootloader_mbedtls_elf.h	7cc4338c84dcac25
+5729	6056	7975181454551081	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls_elf.h	7cc4338c84dcac25
+6056	6708	7975181454609129	CMakeFiles/picotool.dir/data_locs.cpp.obj	33d98feb71a487df
+6080	7299	7975181454846607	CMakeFiles/picotool.dir/lib/whereami/whereami.c.obj	3ff1589ee54153b2
+6062	7721	7975181454671409	CMakeFiles/picotool.dir/get_enc_bootloader.cpp.obj	a37f082f79f5c512
+3500	8199	7975181429047087	elf/CMakeFiles/elf.dir/elf_file.cpp.obj	537097cf7c25cebb
+6087	8313	7975181454927063	CMakeFiles/picotool.dir/lib/whereami/whereami++.cpp.obj	6baf00b4f6c949aa
+8199	8318	7975181476045074	elf/libelf.a	26b92e1a541f2c3a
+6068	8396	7975181454723990	CMakeFiles/picotool.dir/no_otp.cpp.obj	66b09c08615b7f3e
+8318	8430	7975181477234331	elf2uf2/libelf2uf2.a	8434a5ff72be6e02
+3665	10192	7975181430703180	bintool/CMakeFiles/bintool.dir/bintool.cpp.obj	91956bd9f6da2b39
+10193	10302	7975181495980519	bintool/libbintool.a	a9af7ccbb94e2f33
+6072	32423	7975181454779775	CMakeFiles/picotool.dir/main.cpp.obj	6a2560803d896f5f
+32424	32669	7975181718305517	picotool.exe	2b7c346aa44b2cf3
+38	93	7975181721572469	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-build	32a7100038e3d013
+38	93	7975181721572469	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-build	32a7100038e3d013
+44	101	7975181721647610	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-build	d057c46173f3a939
+44	101	7975181721647610	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-build	d057c46173f3a939
+94	127	7975181722137724	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-install	68c662ab9edaeef5
+94	127	7975181722137724	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-install	68c662ab9edaeef5
+101	135	7975181722202171	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-install	3bc2f5a807ed5735
+101	135	7975181722202171	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-install	3bc2f5a807ed5735
+127	194	7975181723092487	CMakeFiles/enc_bootloader-complete	32bb1eb235837320
+127	194	7975181723092487	enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-done	32bb1eb235837320
+127	194	7975181723092487	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/CMakeFiles/enc_bootloader-complete	32bb1eb235837320
+127	194	7975181723092487	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader/src/enc_bootloader-stamp/enc_bootloader-done	32bb1eb235837320
+135	199	7975181723135828	CMakeFiles/enc_bootloader_mbedtls-complete	9fb06f6906a7abdd
+135	199	7975181723135828	enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-done	9fb06f6906a7abdd
+135	199	7975181723135828	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/CMakeFiles/enc_bootloader_mbedtls-complete	9fb06f6906a7abdd
+135	199	7975181723135828	G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/enc_bootloader_mbedtls-done	9fb06f6906a7abdd
+199	250	7975181723190324	CMakeFiles/install.util	6669afdf4bc1bd77

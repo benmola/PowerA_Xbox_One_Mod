@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/CMakeFiles/picotoolBuild-complete.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

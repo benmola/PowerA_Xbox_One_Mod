@@ -1,0 +1,3 @@
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
+G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
