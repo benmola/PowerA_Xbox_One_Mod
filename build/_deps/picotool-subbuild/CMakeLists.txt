@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(picotool-populate
                      "GIT_REPOSITORY" "https://github.com/raspberrypi/picotool.git" "GIT_TAG" "2.2.0"
-                    SOURCE_DIR          "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src"
-                    BINARY_DIR          "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build"
+                    SOURCE_DIR          "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src"
+                    BINARY_DIR          "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -1,13 +1,13 @@
 # Target labels
  pioasmBuild
 # Source files and their labels
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild-complete.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-build.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-configure.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-download.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-install.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-mkdir.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-patch.rule
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-update.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild-complete.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-build.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-configure.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-download.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-install.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-mkdir.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-patch.rule
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-update.rule

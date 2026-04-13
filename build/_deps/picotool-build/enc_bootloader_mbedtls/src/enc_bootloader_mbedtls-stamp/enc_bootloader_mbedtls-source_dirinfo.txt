@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src/enc_bootloader
+source_dir=G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src/enc_bootloader
 work_dir=
 

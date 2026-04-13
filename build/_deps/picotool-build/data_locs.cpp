@@ -3,5 +3,5 @@
 #include <string>
 
 std::vector<std::string> data_locs = {
-    "./","G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/"
+    "./","G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/"
 };

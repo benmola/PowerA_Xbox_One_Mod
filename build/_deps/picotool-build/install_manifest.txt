@@ -1,7 +1,7 @@
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/picotool.exe
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/picotoolTargets.cmake
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/picotoolTargets-release.cmake
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/picotoolConfig.cmake
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/picotoolConfigVersion.cmake
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/enc_bootloader.elf
-G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool/enc_bootloader_mbedtls.elf
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/picotool.exe
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/picotoolTargets.cmake
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/picotoolTargets-release.cmake
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/picotoolConfig.cmake
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/picotoolConfigVersion.cmake
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/enc_bootloader.elf
+G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool/enc_bootloader_mbedtls.elf

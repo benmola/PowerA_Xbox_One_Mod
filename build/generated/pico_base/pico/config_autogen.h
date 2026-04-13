@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "G:/PowerA Controller Project/files/pico-workspace/pico-sdk/src/boards/include/boards/pico.h"
-#include "G:/PowerA Controller Project/files/pico-workspace/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "G:/PowerA Controller Project/pico-sdk/src/boards/include/boards/pico.h"
+#include "G:/PowerA Controller Project/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:

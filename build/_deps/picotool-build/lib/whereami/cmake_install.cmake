@@ -1,8 +1,8 @@
-# Install script for directory: G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src/lib/whereami
+# Install script for directory: G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src/lib/whereami
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps")
+  set(CMAKE_INSTALL_PREFIX "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/lib/whereami/install_local_manifest.txt"
+  file(WRITE "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/lib/whereami/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

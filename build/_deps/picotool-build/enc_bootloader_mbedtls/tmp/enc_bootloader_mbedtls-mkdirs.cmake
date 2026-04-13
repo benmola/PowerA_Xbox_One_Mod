@@ -6,22 +6,22 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src/enc_bootloader")
-  file(MAKE_DIRECTORY "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src/enc_bootloader")
+if(NOT EXISTS "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src/enc_bootloader")
+  file(MAKE_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src/enc_bootloader")
 endif()
 file(MAKE_DIRECTORY
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls"
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls"
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/tmp"
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp"
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src"
-  "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/tmp"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/src"
+  "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/${subDir}")
+    file(MAKE_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/src/enc_bootloader_mbedtls-stamp${cfgdir}") # cfgdir has leading slash
 endif()

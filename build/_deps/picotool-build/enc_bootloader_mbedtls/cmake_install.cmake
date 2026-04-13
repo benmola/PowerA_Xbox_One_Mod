@@ -1,4 +1,4 @@
-# Install script for directory: G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-src/enc_bootloader
+# Install script for directory: G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src/enc_bootloader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/install_local_manifest.txt"
+  file(WRITE "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "G:/PowerA Controller Project/files/pico-workspace/pico_gamepad_host/build/_deps/picotool-build/enc_bootloader_mbedtls/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-build/enc_bootloader_mbedtls/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
