@@ -35,7 +35,7 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe"
+    COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/raspberrypi/picotool.git" "picotool-src"
     WORKING_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps"
     RESULT_VARIABLE error_code
@@ -51,7 +51,7 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe"
+  COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe"
           checkout "2.2.0" --
   WORKING_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src"
   RESULT_VARIABLE error_code
@@ -64,7 +64,7 @@ endif()
 set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
-    COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe" 
+    COMMAND "C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe" 
             submodule update --recursive --init 
     WORKING_DIRECTORY "G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/_deps/picotool-src"
     RESULT_VARIABLE error_code

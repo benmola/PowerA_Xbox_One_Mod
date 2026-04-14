@@ -18,10 +18,10 @@ project(picotool-populate NONE)
 
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
-set(GIT_EXECUTABLE [==[C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe]==])
+set(GIT_EXECUTABLE [==[C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe]==])
 set(Git_VERSION [==[2.51.0.windows.1]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe;2.51.0.windows.1]==]
+  [==[C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe;2.51.0.windows.1]==]
 )
 
 

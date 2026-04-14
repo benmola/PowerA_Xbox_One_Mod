@@ -36,6 +36,7 @@ usbh_class_driver_t const *usbh_app_driver_get_cb(uint8_t *driver_count) {
 #define NRF_R_REGISTER    0x00
 #define NRF_W_REGISTER    0x20
 #define NRF_W_TX_PAYLOAD  0xA0
+#define NRF_R_RX_PAYLOAD  0x61
 #define NRF_FLUSH_TX      0xE1
 #define NRF_FLUSH_RX      0xE2
 #define NRF_NOP           0xFF
@@ -49,8 +50,11 @@ usbh_class_driver_t const *usbh_app_driver_get_cb(uint8_t *driver_count) {
 #define REG_RF_SETUP      0x06
 #define REG_STATUS        0x07
 #define REG_RX_ADDR_P0    0x0A
+#define REG_RX_ADDR_P1    0x0B
 #define REG_TX_ADDR       0x10
 #define REG_RX_PW_P0      0x11
+#define REG_RX_PW_P1      0x12
+#define REG_FIFO_STATUS   0x17
 
 // ----------------------------------------------------------------------------
 // NRF24L01+ HELPERS
@@ -89,6 +93,23 @@ static void nrf_cmd(uint8_t cmd) {
     csn_put(1);
 }
 
+static uint8_t nrf_read_register(uint8_t reg) {
+    csn_put(0);
+    nrf_transfer(NRF_R_REGISTER | (reg & 0x1F));
+    uint8_t val = nrf_transfer(0xFF);
+    csn_put(1);
+    return val;
+}
+
+static void nrf_read_payload(uint8_t *buf, uint8_t len) {
+    csn_put(0);
+    nrf_transfer(NRF_R_RX_PAYLOAD);
+    for (uint8_t i = 0; i < len; i++) {
+        buf[i] = nrf_transfer(0xFF);
+    }
+    csn_put(1);
+}
+
 static void nrf_init(void) {
     // 1. SPI Setup
     spi_init(SPI_PORT, 2000000); // 2MHz SPI
@@ -124,24 +145,35 @@ static void nrf_init(void) {
     // Bit 3 = 1 (2Mbps), Bits 2:1 = 3 (0dBm) -> 0x0E (14)
     nrf_write_register(REG_RF_SETUP, 0x0E);
 
-    // Address = 0xE7E7E7E7E7
-    uint8_t addr[5] = {0xE7, 0xE7, 0xE7, 0xE7, 0xE7};
-    nrf_write_register_multi(REG_TX_ADDR, addr, 5);
-    nrf_write_register_multi(REG_RX_ADDR_P0, addr, 5);
+    // TX Address = 0xE7E7E7E7E7 (gamepad data → receiver)
+    uint8_t tx_addr[5] = {0xE7, 0xE7, 0xE7, 0xE7, 0xE7};
+    nrf_write_register_multi(REG_TX_ADDR, tx_addr, 5);
+    nrf_write_register_multi(REG_RX_ADDR_P0, tx_addr, 5);
 
-    // RX_PW_P0 = 14 bytes
+    // RX Pipe 1 Address for rumble data from receiver.
+    // The NRF52840 transmits with BASE0=0xD2..., but sends each byte
+    // LSBit-first.  NRF24L01+ receives MSBit-first, so it sees
+    // reverse_bits(0xD2) = 0x4B.  We must match that here.
+    uint8_t rumble_addr[5] = {0x4B, 0x4B, 0x4B, 0x4B, 0x4B};
+    nrf_write_register_multi(REG_RX_ADDR_P1, rumble_addr, 5);
+
+    // Enable RX on Pipe 0 + Pipe 1
+    nrf_write_register(REG_EN_RXADDR, 0x03);
+
+    // RX payload widths: 14 bytes on both pipes
     nrf_write_register(REG_RX_PW_P0, 14);
+    nrf_write_register(REG_RX_PW_P1, 14);
 
     // CONFIG: 
-    // Bit 6: MASK_RX_DR (1)
+    // Bit 6: MASK_RX_DR (0) — unmask so we can poll RX_DR for rumble
     // Bit 5: MASK_TX_DS (1)
     // Bit 4: MASK_MAX_RT(1)
     // Bit 3: EN_CRC (1)
     // Bit 2: CRCO (1 for 2 bytes / 16-bit)
     // Bit 1: PWR_UP (1)
     // Bit 0: PRIM_RX (0 for PTX)
-    // Binary: 0111 1110 = 0x7E
-    nrf_write_register(REG_CONFIG, 0x7E);
+    // Binary: 0011 1110 = 0x3E
+    nrf_write_register(REG_CONFIG, 0x3E);
 
     sleep_ms(2); // Power up delay
     
@@ -178,6 +210,19 @@ static void nrf_transmit(const uint8_t *payload, uint8_t len) {
     ce_put(1);
     busy_wait_us(15);
     ce_put(0);
+
+    // Wait for TX to complete before returning.
+    // With EN_AA=0, TX_DS is set after the packet is fully sent on air.
+    // Without this wait, writing CONFIG immediately after would corrupt
+    // the in-flight packet (~220µs ramp-up + on-air time at 2Mbps).
+    // Timeout after ~2ms to avoid hanging if NRF module is unresponsive.
+    uint8_t status;
+    for (int i = 0; i < 200; i++) {
+        status = nrf_read_register(REG_STATUS);
+        if (status & 0x20) break; // TX_DS = bit 5
+        busy_wait_us(10);
+    }
+    nrf_write_register(REG_STATUS, 0x20); // Clear TX_DS
 }
 
 // ----------------------------------------------------------------------------
@@ -188,6 +233,17 @@ static uint32_t last_tx_time = 0;
 static bool controller_connected = false;
 static uint32_t last_led_toggle = 0;
 static bool led_state = false;
+
+// Stored controller address for rumble forwarding
+static uint8_t ctrl_dev_addr = 0;
+static uint8_t ctrl_instance = 0;
+
+// Persistent rumble state — re-sent periodically to sustain vibration
+static uint8_t rumble_big = 0;
+static uint8_t rumble_small = 0;
+static uint8_t last_sent_big = 0;
+static uint8_t last_sent_small = 0;
+static uint32_t last_rumble_send = 0;
 
 static inline bool passes_deadzone(const xinput_gamepad_t* a, const xinput_gamepad_t* b) {
     if (a->wButtons != b->wButtons) return true;
@@ -259,6 +315,8 @@ void tuh_xinput_mount_cb(uint8_t dev_addr, uint8_t instance, const xinputh_inter
     printf("========================================\n\n");
 
     controller_connected = true;
+    ctrl_dev_addr = dev_addr;
+    ctrl_instance = instance;
     gpio_put(PIN_LED, 1);  // Solid LED = connected
 
     // For Xbox 360 Wireless, must wait for connection packet
@@ -287,6 +345,8 @@ void tuh_xinput_mount_cb(uint8_t dev_addr, uint8_t instance, const xinputh_inter
 void tuh_xinput_umount_cb(uint8_t dev_addr, uint8_t instance) {
     printf("XINPUT UNMOUNTED\n");
     controller_connected = false;
+    ctrl_dev_addr = 0;
+    ctrl_instance = 0;
     gpio_put(PIN_LED, 1); // Steady on = no controller
 }
 
@@ -372,6 +432,7 @@ int main(void) {
     printf("TinyUSB Host initialized. Plug in controller.\n");
 
     nrf_init();
+    printf("Radio: NRF24L01+ ready. TX=E7, RX(rumble)=D2\n");
     
     while (1) {
         tuh_task();
@@ -389,6 +450,68 @@ int main(void) {
         if ((now - last_tx_time) >= 16) {
             build_and_send_payload(&last_pad);
             last_tx_time = now;
+
+            // --- RX phase: listen for rumble packets from receiver ---
+            // Switch NRF24L01+ to PRX mode on Pipe 1 (D2 address)
+            nrf_write_register(REG_CONFIG, 0x3F); // PRIM_RX=1
+            ce_put(1);                            // Enter RX mode
+            busy_wait_us(500);                    // 500µs listening window
+            ce_put(0);                            // Exit RX mode
+
+            // Check if any rumble packets arrived (drain all from FIFO)
+            uint8_t status = nrf_read_register(REG_STATUS);
+            if (status & 0x40) { // RX_DR set
+                while (1) {
+                    uint8_t fifo = nrf_read_register(REG_FIFO_STATUS);
+                    if (fifo & 0x01) break; // RX FIFO empty
+
+                    uint8_t rx_buf[14];
+                    nrf_read_payload(rx_buf, 14);
+
+                    // Reverse bits (NRF52840 sends LSBit, NRF24L01+ receives MSBit)
+                    uint8_t big_motor  = reverse_bits(rx_buf[0]);
+                    uint8_t small_motor = reverse_bits(rx_buf[1]);
+
+                    // Update persistent rumble state
+                    rumble_big = big_motor;
+                    rumble_small = small_motor;
+
+                    if (controller_connected && ctrl_dev_addr != 0) {
+                        if (big_motor != last_sent_big || small_motor != last_sent_small) {
+                            tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance,
+                                                 big_motor, small_motor, false);
+                            last_sent_big = big_motor;
+                            last_sent_small = small_motor;
+                            last_rumble_send = now;
+                            
+                            static uint32_t last_rumble_print = 0;
+                            if (now - last_rumble_print > 500) {
+                                last_rumble_print = now;
+                                printf("[RUMBLE RX] big=%d small=%d\n",
+                                       big_motor, small_motor);
+                            }
+                        }
+                    }
+                }
+                nrf_write_register(REG_STATUS, 0x40); // Clear RX_DR
+            }
+            nrf_cmd(NRF_FLUSH_RX); // Flush any residual
+
+            // Switch back to PTX mode
+            nrf_write_register(REG_CONFIG, 0x3E); // PRIM_RX=0
+        }
+
+        // Re-send rumble every 1000ms to sustain motor vibration.
+        // GIP rumble commands have a built-in duration (~2.5s) that expires;
+        // periodic refresh keeps the motors spinning without being interrupted too often.
+        if ((rumble_big || rumble_small) &&
+            controller_connected && ctrl_dev_addr != 0 &&
+            (now - last_rumble_send) >= 1000) {
+            tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance,
+                                 rumble_big, rumble_small, false);
+            last_sent_big = rumble_big;
+            last_sent_small = rumble_small;
+            last_rumble_send = now;
         }
     }
     

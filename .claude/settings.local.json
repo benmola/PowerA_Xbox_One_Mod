@@ -1,7 +1,31 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xargs grep:*)"
+      "Bash(xargs grep:*)",
+      "Bash(cmake --version)",
+      "Read(//g/PowerA Controller Project/pico-sdk/**)",
+      "Bash(mkdir -p build)",
+      "Bash(cmake -S . -B build -DPICO_SDK_PATH=\"g:/PowerA Controller Project/pico-sdk\")",
+      "Bash(cmake --build build --config Release)",
+      "Bash(ninja --version)",
+      "Bash(cmake -S . -B build -G Ninja -DPICO_SDK_PATH=\"g:/PowerA Controller Project/pico-sdk\")",
+      "Bash(cmake --build build)",
+      "Bash(rm -rf \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build\")",
+      "Bash(cmake -S . -B build -G Ninja -DPICO_SDK_PATH=\"g:/PowerA Controller Project/pico-sdk\" -DCMAKE_NINJA_FORCE_RESPONSE_FILE=ON)",
+      "Bash(\"C:/Program Files \\(x86\\)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-g++.exe\" --version)",
+      "Bash(ls \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/CMakeFiles/\"*.rsp)",
+      "Bash(ls \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/CMakeFiles/pico_gamepad_host.dir/\"*.rsp)",
+      "Bash(\"C:/Program Files \\(x86\\)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-g++.exe\" -mcpu=cortex-m0plus -mthumb -g -O3 -DNDEBUG -Wl,--build-id=none \"-Wl,-Map=G:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.elf.map\" --specs=nosys.specs -Wl,--wrap=__clzsi2 -Wl,--wrap=__clzdi2 -Wl,--wrap=__ctzsi2 -Wl,--wrap=__popcountsi2 -Wl,--wrap=__popcountdi2 -Wl,--wrap=malloc -Wl,--wrap=calloc -Wl,--wrap=realloc -Wl,--wrap=free -Wl,--wrap=memcpy -Wl,--wrap=memset \"-Wl,-LG:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build\" \"-Wl,--script=G:/PowerA Controller Project/pico-sdk/src/rp2_common/pico_crt0/rp2040/memmap_default.ld\" -Wl,-z,max-page-size=4096 -Wl,--gc-sections -Wl,--no-warn-rwx-segments @CMakeFiles/pico_gamepad_host.rsp -o pico_gamepad_host.elf)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(\"./_deps/picotool/picotool\" uf2:*)",
+      "Bash(\"./_deps/picotool/picotool.exe\" uf2:*)",
+      "Bash(\"C:/Program Files \\(x86\\)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-objcopy.exe\" -Obinary pico_gamepad_host.elf pico_gamepad_host.bin)",
+      "Bash(\"C:/Program Files \\(x86\\)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/arm-none-eabi-readelf.exe\" -l pico_gamepad_host.elf)",
+      "Bash(python3 \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/bin_to_uf2.py\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.bin\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.uf2\")",
+      "Bash(python \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/bin_to_uf2.py\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.bin\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.uf2\")",
+      "Bash(python -c ':*)",
+      "Bash(python build.py --clean)",
+      "Bash(python build.py)"
     ]
   }
 }

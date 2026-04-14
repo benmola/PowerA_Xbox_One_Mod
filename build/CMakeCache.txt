@@ -268,7 +268,7 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Git command line client
-GIT_EXECUTABLE:FILEPATH=C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe
+GIT_EXECUTABLE:FILEPATH=C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe
 
 //PICO target board (e.g. pico, pico2)
 PICO_BOARD:STRING=pico

@@ -224,8 +224,8 @@ bool tuh_xinput_set_rumble(uint8_t dev_addr, uint8_t instance, uint8_t lValue, u
         break;
     case XBOXONE:
         memcpy(txbuf, xboxone_rumble, sizeof(xboxone_rumble));
-        txbuf[8] = lValue / 2; // 0 - 128
-        txbuf[9] = rValue / 2; // 0 - 128
+        txbuf[8] = lValue;
+        txbuf[9] = rValue;
         len = sizeof(xboxone_rumble);
         break;
     case XBOXOG:

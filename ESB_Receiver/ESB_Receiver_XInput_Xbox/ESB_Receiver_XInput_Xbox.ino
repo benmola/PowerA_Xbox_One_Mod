@@ -131,6 +131,10 @@ public:
 #define RADIO_BASE_ADDR   0xE7E7E7E7UL
 #define RADIO_PREFIX_BYTE 0xE7
 
+// Rumble return path: Receiver → Pico (separate address)
+#define RUMBLE_BASE_ADDR   0xD2D2D2D2UL
+#define RUMBLE_PREFIX_BYTE 0xD2
+
 #define LED_PIN LED_BUILTIN
 
 // Report send timing
@@ -251,6 +255,11 @@ static uint32_t rx_count       = 0;
 static uint32_t crc_errors     = 0;
 static uint32_t last_status_ms = 0;
 static uint32_t last_print_ms  = 0;
+
+// Rumble state (set by USB task, consumed by radio task)
+static uint8_t  rumble_payload[PAYLOAD_LEN] __attribute__((aligned(4)));
+static volatile bool rumble_pending = false;
+static uint32_t rumble_tx_count = 0;
 
 // ============================================================
 //  Input cache  (decoupled from radio rate)
@@ -465,11 +474,17 @@ void loop() {
     uint32_t len = tud_vendor_read(buf, sizeof(buf));
     if (len < 1)
       break;
-    // Log the first rumble command received (one-time diagnostic)
-    static bool rumble_logged = false;
-    if (!rumble_logged && len >= 5 && buf[0] == 0x00 && buf[1] == 0x08) {
-      rumble_logged = true;
-      Serial.printf("[USB] Rumble: big=%d small=%d\r\n", buf[3], buf[4]);
+    // Capture rumble commands for radio relay to controller
+    if (len >= 5 && buf[0] == 0x00 && buf[1] == 0x08) {
+      memset(rumble_payload, 0, PAYLOAD_LEN);
+      rumble_payload[0] = buf[3]; // Big motor (left)
+      rumble_payload[1] = buf[4]; // Small motor (right)
+      rumble_pending = true;
+      static bool rumble_logged = false;
+      if (!rumble_logged) {
+        rumble_logged = true;
+        Serial.printf("[USB] Rumble: big=%d small=%d\r\n", buf[3], buf[4]);
+      }
     }
   }
 
@@ -508,6 +523,49 @@ void loop() {
         last_print_ms = now;
         Serial.printf("BTN:%04X LX:%6d LY:%6d RX:%6d RY:%6d LT:%3d RT:%3d\r\n",
                       c_buttons, c_lx, c_ly, c_rx, c_ry, c_lt, c_rt);
+      }
+
+      // ---- Synchronized rumble TX ----
+      // Transmit rumble immediately after receiving a gamepad packet.
+      // The Pico enters RX mode right after its TX, so this is the
+      // only moment the Pico's 500µs listening window is open.
+      if (rumble_pending) {
+        rumble_pending = false;
+
+        // Stop continuous RX
+        NRF_RADIO->SHORTS = 0;
+        NRF_RADIO->TASKS_DISABLE = 1;
+        while (NRF_RADIO->STATE != 0)
+          ;
+
+        // Swap to rumble address (D2) and point to rumble buffer
+        NRF_RADIO->BASE0      = RUMBLE_BASE_ADDR;
+        NRF_RADIO->PREFIX0    = RUMBLE_PREFIX_BYTE;
+        NRF_RADIO->TXADDRESS  = 0;
+        NRF_RADIO->PACKETPTR  = (uint32_t)rumble_payload;
+        NRF_RADIO->SHORTS     = RADIO_SHORTS_END_DISABLE_Msk;
+
+        // 3x redundancy blast (~400µs total, fits in Pico's 500µs window)
+        for (int i = 0; i < 3; i++) {
+          NRF_RADIO->EVENTS_READY    = 0;
+          NRF_RADIO->EVENTS_END      = 0;
+          NRF_RADIO->EVENTS_DISABLED = 0;
+          NRF_RADIO->TASKS_TXEN      = 1;
+          while (!NRF_RADIO->EVENTS_READY)
+            ;
+          NRF_RADIO->TASKS_START = 1;
+          while (!NRF_RADIO->EVENTS_DISABLED)
+            ;
+        }
+        rumble_tx_count++;
+
+        // Restore gamepad RX address (E7) and restart RX
+        NRF_RADIO->BASE0      = RADIO_BASE_ADDR;
+        NRF_RADIO->PREFIX0    = RADIO_PREFIX_BYTE;
+        NRF_RADIO->RXADDRESSES = 1;
+        NRF_RADIO->PACKETPTR  = (uint32_t)radio_pkt;
+        NRF_RADIO->SHORTS     = RADIO_SHORTS_END_START_Msk;
+        radio_start_rx();
       }
     } else {
       crc_errors++;
@@ -582,8 +640,8 @@ void loop() {
   uint32_t now = millis();
   if (now - last_status_ms >= 5000) {
     last_status_ms = now;
-    Serial.printf("[STATUS] up=%lus  pkt=%lu  crc_e=%lu  radio=%lu\r\n",
-                  now / 1000, rx_count, crc_errors, NRF_RADIO->STATE);
+    Serial.printf("[STATUS] up=%lus  pkt=%lu  crc_e=%lu  radio=%lu  rumble_tx=%lu\r\n",
+                  now / 1000, rx_count, crc_errors, NRF_RADIO->STATE, rumble_tx_count);
     Serial.printf("  mounted=%d  fifo_free=%lu\r\n",
                   (int)tud_vendor_mounted(),
                   tud_vendor_write_available());

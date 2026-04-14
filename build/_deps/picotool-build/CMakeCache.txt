@@ -318,7 +318,7 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Git command line client
-GIT_EXECUTABLE:FILEPATH=C:/Users/bdekh/AppData/Local/Programs/Git/cmd/git.exe
+GIT_EXECUTABLE:FILEPATH=C:/Users/bdekh/AppData/Local/Programs/Git/mingw64/bin/git.exe
 
 //Check submodules during build
 GIT_SUBMODULE:BOOL=OFF
