@@ -238,12 +238,10 @@ static bool led_state = false;
 static uint8_t ctrl_dev_addr = 0;
 static uint8_t ctrl_instance = 0;
 
-// Persistent rumble state — re-sent periodically to sustain vibration
+// Persistent rumble state
 static uint8_t rumble_big = 0;
 static uint8_t rumble_small = 0;
-static uint8_t last_sent_big = 0;
-static uint8_t last_sent_small = 0;
-static uint32_t last_rumble_send = 0;
+static uint32_t last_rumble_rx_time = 0;  // timestamp of last received rumble packet
 
 static inline bool passes_deadzone(const xinput_gamepad_t* a, const xinput_gamepad_t* b) {
     if (a->wButtons != b->wButtons) return true;
@@ -477,19 +475,15 @@ int main(void) {
                     rumble_small = small_motor;
 
                     if (controller_connected && ctrl_dev_addr != 0) {
-                        if (big_motor != last_sent_big || small_motor != last_sent_small) {
-                            tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance,
-                                                 big_motor, small_motor, false);
-                            last_sent_big = big_motor;
-                            last_sent_small = small_motor;
-                            last_rumble_send = now;
-                            
-                            static uint32_t last_rumble_print = 0;
-                            if (now - last_rumble_print > 500) {
-                                last_rumble_print = now;
-                                printf("[RUMBLE RX] big=%d small=%d\n",
-                                       big_motor, small_motor);
-                            }
+                        tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance,
+                                             big_motor, small_motor, false);
+                        last_rumble_rx_time = now;
+
+                        static uint32_t last_rumble_print = 0;
+                        if (now - last_rumble_print > 500) {
+                            last_rumble_print = now;
+                            printf("[RUMBLE RX] big=%d small=%d\n",
+                                   big_motor, small_motor);
                         }
                     }
                 }
@@ -501,17 +495,15 @@ int main(void) {
             nrf_write_register(REG_CONFIG, 0x3E); // PRIM_RX=0
         }
 
-        // Re-send rumble every 1000ms to sustain motor vibration.
-        // GIP rumble commands have a built-in duration (~2.5s) that expires;
-        // periodic refresh keeps the motors spinning without being interrupted too often.
+        // Safety timeout: stop motors if no rumble packet received for 1500ms.
+        // The NRF52840 broadcasts rumble at 20Hz while active; if packets stop
+        // arriving (radio loss), this prevents motors from running indefinitely.
         if ((rumble_big || rumble_small) &&
             controller_connected && ctrl_dev_addr != 0 &&
-            (now - last_rumble_send) >= 1000) {
-            tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance,
-                                 rumble_big, rumble_small, false);
-            last_sent_big = rumble_big;
-            last_sent_small = rumble_small;
-            last_rumble_send = now;
+            (now - last_rumble_rx_time) >= 1500) {
+            rumble_big = 0;
+            rumble_small = 0;
+            tuh_xinput_set_rumble(ctrl_dev_addr, ctrl_instance, 0, 0, false);
         }
     }
     

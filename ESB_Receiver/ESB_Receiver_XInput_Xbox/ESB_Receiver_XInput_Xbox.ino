@@ -140,6 +140,8 @@ public:
 // Report send timing
 #define XINPUT_REPORT_INTERVAL_MS  4   // minimum ms between sends
 #define XINPUT_HEARTBEAT_MS        8   // resend even when idle
+#define RUMBLE_TX_INTERVAL_MS     50   // rumble broadcast interval (20Hz)
+#define RUMBLE_STOP_DRAIN_MS     300   // keep sending 0,0 for 300ms after stop
 
 // ============================================================
 //  XInput button bitmasks (from transmitter's radio packet)
@@ -258,7 +260,11 @@ static uint32_t last_print_ms  = 0;
 
 // Rumble state (set by USB task, consumed by radio task)
 static uint8_t  rumble_payload[PAYLOAD_LEN] __attribute__((aligned(4)));
-static volatile bool rumble_pending = false;
+static uint8_t  rumble_big_val = 0;
+static uint8_t  rumble_small_val = 0;
+static bool     rumble_active = false;        // broadcasting while true
+static uint32_t last_rumble_tx_ms = 0;        // last time we sent a rumble TX
+static uint32_t rumble_zero_since_ms = 0;     // when values last went to zero
 static uint32_t rumble_tx_count = 0;
 
 // ============================================================
@@ -476,13 +482,19 @@ void loop() {
       break;
     // Capture rumble commands for radio relay to controller
     if (len >= 5 && buf[0] == 0x00 && buf[1] == 0x08) {
+      rumble_big_val   = buf[3]; // Big motor (left)
+      rumble_small_val = buf[4]; // Small motor (right)
       memset(rumble_payload, 0, PAYLOAD_LEN);
-      rumble_payload[0] = buf[3]; // Big motor (left)
-      rumble_payload[1] = buf[4]; // Small motor (right)
-      rumble_pending = true;
-      static bool rumble_logged = false;
-      if (!rumble_logged) {
-        rumble_logged = true;
+      rumble_payload[0] = rumble_big_val;
+      rumble_payload[1] = rumble_small_val;
+      rumble_active = true;  // start (or keep) broadcasting
+      if (rumble_big_val == 0 && rumble_small_val == 0) {
+        rumble_zero_since_ms = millis();  // start drain timer
+      }
+      static uint32_t last_rumble_log_ms = 0;
+      uint32_t now_log = millis();
+      if (now_log - last_rumble_log_ms >= 200) {
+        last_rumble_log_ms = now_log;
         Serial.printf("[USB] Rumble: big=%d small=%d\r\n", buf[3], buf[4]);
       }
     }
@@ -526,11 +538,18 @@ void loop() {
       }
 
       // ---- Synchronized rumble TX ----
-      // Transmit rumble immediately after receiving a gamepad packet.
+      // Broadcast current rumble state at 20Hz while active.
       // The Pico enters RX mode right after its TX, so this is the
-      // only moment the Pico's 500µs listening window is open.
-      if (rumble_pending) {
-        rumble_pending = false;
+      // correct window to reach the Pico's 500µs listening window.
+
+      // Expire active flag once 0,0 has been broadcasting long enough
+      if (rumble_active && rumble_big_val == 0 && rumble_small_val == 0 &&
+          (now - rumble_zero_since_ms) >= RUMBLE_STOP_DRAIN_MS) {
+        rumble_active = false;
+      }
+
+      if (rumble_active && (now - last_rumble_tx_ms >= RUMBLE_TX_INTERVAL_MS)) {
+        last_rumble_tx_ms = now;
 
         // Stop continuous RX
         NRF_RADIO->SHORTS = 0;

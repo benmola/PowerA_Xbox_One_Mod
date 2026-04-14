@@ -104,3 +104,4 @@
 33713	34265	7978931521528580	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	bdfc88e1a6cc19aa
 33830	34484	7978931522700577	CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj	4c16b37e8ab57a33
 33346	34552	7978931517871748	CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj	108ea2a48104ad2a
+36	698	7978941448421414	CMakeFiles/pico_gamepad_host.dir/main.c.obj	fccd8674b1bdfdf3

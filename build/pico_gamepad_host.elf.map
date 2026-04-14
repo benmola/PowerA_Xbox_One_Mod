@@ -2648,7 +2648,7 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x8cdc
+.text           0x10000100     0x8ca4
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
@@ -2733,526 +2733,526 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x100007f8      0x2b4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
                 0x100007f8                tuh_xinput_report_received_cb
  .text.startup.main
-                0x10000aac      0x4d4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x10000aac      0x49c CMakeFiles/pico_gamepad_host.dir/main.c.obj
                 0x10000aac                main
  .text.gpio_set_function
-                0x10000f80       0x34 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000f80                gpio_set_function
+                0x10000f48       0x34 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000f48                gpio_set_function
  .text.gpio_init
-                0x10000fb4       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000fb4                gpio_init
- .text.panic    0x10000ff4       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
-                0x10000ff4                panic
+                0x10000f7c       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000f7c                gpio_init
+ .text.panic    0x10000fbc       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x10000fbc                panic
  .text.hw_claim_or_assert
-                0x10001024       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
-                0x10001024                hw_claim_or_assert
+                0x10000fec       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+                0x10000fec                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10001068       0x88 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
-                0x10001068                hw_claim_unused_from_range
+                0x10001030       0x88 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+                0x10001030                hw_claim_unused_from_range
  .text.next_striped_spin_lock_num
-                0x100010f0       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100010f0                next_striped_spin_lock_num
+                0x100010b8       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100010b8                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x10001108       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10001108                spin_lock_claim_unused
+                0x100010d0       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100010d0                spin_lock_claim_unused
  .text.spin_locks_reset
-                0x1000112c       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-                0x1000112c                spin_locks_reset
+                0x100010f4       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x100010f4                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x10001148       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001148                runtime_init_per_core_irq_priorities
+                0x10001110       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001110                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x1000116c       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000116c                irq_set_enabled
+                0x10001134       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001134                irq_set_enabled
  .text.irq_set_exclusive_handler
-                0x10001190       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001190                irq_set_exclusive_handler
+                0x10001158       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001158                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x100011e4      0x1f4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100011e4                irq_add_shared_handler
+                0x100011ac      0x1f4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100011ac                irq_add_shared_handler
  .text.irq_remove_handler
-                0x100013d8      0x1d4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100013d8                irq_remove_handler
+                0x100013a0      0x1d4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100013a0                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x100015ac       0xb4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100015ac                irq_add_tail_to_free_list
+                0x10001574       0xb4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001574                irq_add_tail_to_free_list
  .text.lock_init
-                0x10001660       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10001660                lock_init
+                0x10001628       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10001628                lock_init
  .text.runtime_init_mutex
-                0x10001670       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001670                runtime_init_mutex
+                0x10001638       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001638                runtime_init_mutex
  .text.mutex_init
-                0x100016c0       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x100016c0                mutex_init
+                0x10001688       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10001688                mutex_init
  .text.critical_section_init
-                0x100016dc       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x100016dc                critical_section_init
+                0x100016a4       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x100016a4                critical_section_init
  .text.sleep_until_callback
-                0x100016f8       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x100016c0       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_irq_handler
-                0x10001728      0x300 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x100016f0      0x300 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
  .text.runtime_init_default_alarm_pool
-                0x10001a28       0xdc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001a28                runtime_init_default_alarm_pool
+                0x100019f0       0xdc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x100019f0                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10001b04       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001b04                alarm_pool_add_alarm_at_force_in_context
+                0x10001acc       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001acc                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10001bb4       0x74 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001bb4                alarm_pool_cancel_alarm
+                0x10001b7c       0x74 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001b7c                alarm_pool_cancel_alarm
  .text.sleep_ms
-                0x10001c28       0xfc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001c28                sleep_ms
+                0x10001bf0       0xfc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001bf0                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10001d24      0x10c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001d24                best_effort_wfe_or_timeout
+                0x10001cec      0x10c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001cec                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x10001e30       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001e30                timer_hardware_alarm_claim
+                0x10001df8       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001df8                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10001e44       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001e44                timer_time_us_64
+                0x10001e0c       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001e0c                timer_time_us_64
  .text.time_us_64
-                0x10001e54       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001e54                time_us_64
+                0x10001e1c       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001e1c                time_us_64
  .text.busy_wait_us
-                0x10001e68       0x68 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001e68                busy_wait_us
+                0x10001e30       0x68 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001e30                busy_wait_us
  .text.busy_wait_until
-                0x10001ed0       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001ed0                busy_wait_until
+                0x10001e98       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001e98                busy_wait_until
  .text.uart_init
-                0x10001ef0      0x120 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10001ef0                uart_init
+                0x10001eb8      0x120 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10001eb8                uart_init
  .text.clock_configure_int_divider
-                0x10002010       0xf4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002010                clock_configure_int_divider
+                0x10001fd8       0xf4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001fd8                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10002104       0xe8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10002104                clock_configure_undivided
+                0x100020cc       0xe8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100020cc                clock_configure_undivided
  .text.clock_get_hz
-                0x100021ec        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x100021ec                clock_get_hz
+                0x100021b4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x100021b4                clock_get_hz
  .text.pll_init
-                0x100021f8       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x100021f8                pll_init
+                0x100021c0       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x100021c0                pll_init
  .text.tick_start
-                0x1000229c       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
-                0x1000229c                tick_start
+                0x10002264       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x10002264                tick_start
  .text.rom_func_lookup
-                0x100022ac       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100022ac                rom_func_lookup
+                0x10002274       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10002274                rom_func_lookup
  .text.rom_data_lookup
-                0x100022bc       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100022bc                rom_data_lookup
+                0x10002284       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10002284                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100022cc       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100022cc                rom_funcs_lookup
+                0x10002294       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10002294                rom_funcs_lookup
  .text.xosc_init
-                0x10002310       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10002310                xosc_init
+                0x100022d8       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100022d8                xosc_init
  .text.first_per_core_initializer
-                0x10002338        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002300        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .text.hard_assertion_failure
-                0x1000233c        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000233c                hard_assertion_failure
+                0x10002304        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002304                hard_assertion_failure
  .text.runtime_run_initializers
-                0x10002348       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10002348                runtime_run_initializers
+                0x10002310       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10002310                runtime_run_initializers
  .text.runtime_init_early_resets
-                0x10002370       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10002370                runtime_init_early_resets
+                0x10002338       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10002338                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x1000239c       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x1000239c                runtime_init_usb_power_down
+                0x10002364       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10002364                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x100023b8       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x100023b8                runtime_init_post_clock_resets
+                0x10002380       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10002380                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x100023d8       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x100023d8                runtime_init_rp2040_gpio_ie_disable
+                0x100023a0       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100023a0                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x100023ec        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x100023ec                runtime_init_spin_locks_reset
+                0x100023b4        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100023b4                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x100023f4       0xb4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x100023f4                runtime_init_install_ram_vector_table
+                0x100023bc       0xb4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x100023bc                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x100024a8       0xd8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-                0x100024a8                runtime_init_clocks
- .text          0x10002580       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10002470       0xd8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x10002470                runtime_init_clocks
+ .text          0x10002548       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.__wrap___aeabi_idiv
-                0x10002590       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x10002590                __wrap___aeabi_idivmod
-                0x10002590                divmod_s32s32
-                0x10002590                div_s32s32
-                0x10002590                __wrap___aeabi_idiv
-                0x10002598                divmod_s32s32_unsafe
-                0x100025c4                divmod_s32s32_savestate
+                0x10002558       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x10002558                __wrap___aeabi_idivmod
+                0x10002558                divmod_s32s32
+                0x10002558                div_s32s32
+                0x10002558                __wrap___aeabi_idiv
+                0x10002560                divmod_s32s32_unsafe
+                0x1000258c                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x100025e0       0x4c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x100025e0                __wrap___aeabi_uidiv
-                0x100025e0                __wrap___aeabi_uidivmod
-                0x100025e0                div_u32u32
-                0x100025e0                divmod_u32u32
-                0x100025e8                divmod_u32u32_unsafe
-                0x10002610                divmod_u32u32_savestate
+                0x100025a8       0x4c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x100025a8                __wrap___aeabi_uidiv
+                0x100025a8                __wrap___aeabi_uidivmod
+                0x100025a8                div_u32u32
+                0x100025a8                divmod_u32u32
+                0x100025b0                divmod_u32u32_unsafe
+                0x100025d8                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x1000262c      0x424 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
-                0x1000262c                div_s64s64
-                0x1000262c                divmod_s64s64
-                0x1000262c                __wrap___aeabi_ldivmod
-                0x1000265c                divmod_u64u64
-                0x1000265c                div_u64u64
-                0x1000265c                __wrap___aeabi_uldivmod
-                0x1000266c                divmod_u64u64_savestate
-                0x1000268c                divmod_s64s64_unsafe
-                0x10002714                divmod_u64u64_unsafe
+                0x100025f4      0x424 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x100025f4                div_s64s64
+                0x100025f4                divmod_s64s64
+                0x100025f4                __wrap___aeabi_ldivmod
+                0x10002624                divmod_u64u64
+                0x10002624                div_u64u64
+                0x10002624                __wrap___aeabi_uldivmod
+                0x10002634                divmod_u64u64_savestate
+                0x10002654                divmod_s64s64_unsafe
+                0x100026dc                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10002a50       0x80 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002a50                __wrap___aeabi_drsub
-                0x10002a56                __wrap___aeabi_dsub
-                0x10002a68                __wrap___aeabi_dadd
-                0x10002a7a                __wrap___aeabi_ddiv
-                0x10002ab6                __wrap___aeabi_dmul
+                0x10002a18       0x80 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002a18                __wrap___aeabi_drsub
+                0x10002a1e                __wrap___aeabi_dsub
+                0x10002a30                __wrap___aeabi_dadd
+                0x10002a42                __wrap___aeabi_ddiv
+                0x10002a7e                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10002ad0       0x6c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002ad0                __wrap___aeabi_cdrcmple
-                0x10002ae0                __wrap___aeabi_cdcmpeq
-                0x10002ae0                __wrap___aeabi_cdcmple
+                0x10002a98       0x6c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002a98                __wrap___aeabi_cdrcmple
+                0x10002aa8                __wrap___aeabi_cdcmpeq
+                0x10002aa8                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmplt
-                0x10002b3c        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b3c                __wrap___aeabi_dcmplt
+                0x10002b04        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b04                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10002b48       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b48                __wrap___aeabi_dcmple
+                0x10002b10       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b10                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10002b58       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b58                __wrap___aeabi_dcmpge
+                0x10002b20       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b20                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10002b68        0xa CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b68                __wrap___aeabi_dcmpgt
+                0x10002b30        0xa CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b30                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10002b72       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b72                __wrap___aeabi_dcmpun
- *fill*         0x10002b8a        0x2 
+                0x10002b3a       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b3a                __wrap___aeabi_dcmpun
+ *fill*         0x10002b52        0x2 
  .text.__wrap___aeabi_i2d
-                0x10002b8c       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002b8c                uint2double
-                0x10002b8c                __wrap___aeabi_ui2d
-                0x10002b94                int2double
-                0x10002b94                __wrap___aeabi_i2d
+                0x10002b54       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b54                uint2double
+                0x10002b54                __wrap___aeabi_ui2d
+                0x10002b5c                int2double
+                0x10002b5c                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10002bc4       0x48 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002bc4                double2int_z
-                0x10002bc4                __wrap___aeabi_d2iz
+                0x10002b8c       0x48 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002b8c                double2int_z
+                0x10002b8c                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10002c0c       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-                0x10002c0c                double2uint
-                0x10002c0c                __wrap___aeabi_d2uiz
-                0x10002c0c                double2uint_z
+                0x10002bd4       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10002bd4                double2uint
+                0x10002bd4                __wrap___aeabi_d2uiz
+                0x10002bd4                double2uint_z
  .text.__aeabi_double_init
-                0x10002c24       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
-                0x10002c24                __aeabi_double_init
+                0x10002bec       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x10002bec                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10002cc8       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10002cc8                double_table_shim_on_use_helper
+                0x10002c90       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10002c90                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10002cf4       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10002cf4                drsub_shim
-                0x10002cfa                dsub_shim
+                0x10002cbc       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10002cbc                drsub_shim
+                0x10002cc2                dsub_shim
  .text.dadd_shim
-                0x10002d04      0x15c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10002d04                dadd_shim
+                0x10002ccc      0x15c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10002ccc                dadd_shim
  .text.dmul_shim
-                0x10002e60      0x15c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10002e60                dmul_shim
+                0x10002e28      0x15c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10002e28                dmul_shim
  .text.ddiv_shim
-                0x10002fbc      0x1b0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x10002fbc                ddiv_shim
+                0x10002f84      0x1b0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10002f84                ddiv_shim
  .text.double2uint_shim
-                0x1000316c        0xe CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x1000316c                double2uint_shim
-                0x1000316e                double2ufix_shim
- *fill*         0x1000317a        0x2 
+                0x10003134        0xe CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10003134                double2uint_shim
+                0x10003136                double2ufix_shim
+ *fill*         0x10003142        0x2 
  .text.double2uint64_shim
-                0x1000317c       0x70 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x1000317c                double2uint64_shim
-                0x1000317e                double2ufix64_shim
-                0x1000319e                d2fix_a
+                0x10003144       0x70 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x10003144                double2uint64_shim
+                0x10003146                double2ufix64_shim
+                0x10003166                d2fix_a
  .text.dunpacks
-                0x100031ec       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-                0x100031ec                dunpacks
+                0x100031b4       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x100031b4                dunpacks
  .text.__aeabi_lmul
-                0x10003228       0x32 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x10003228                __wrap___aeabi_lmul
- *fill*         0x1000325a        0x2 
+                0x100031f0       0x32 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x100031f0                __wrap___aeabi_lmul
+ *fill*         0x10003222        0x2 
  .text.__aeabi_float_init
-                0x1000325c       0x64 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
-                0x1000325c                __aeabi_float_init
+                0x10003224       0x64 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x10003224                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x100032c0       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
-                0x100032c0                float_table_shim_on_use_helper
- .text          0x100032ec       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100032ec                __aeabi_mem_init
- .text.memset   0x100032fc        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x100032fc                __wrap_memset
- .text.memcpy   0x10003308        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10003308                __wrap_memcpy
-                0x10003308                __wrap___aeabi_memcpy
+                0x10003288       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+                0x10003288                float_table_shim_on_use_helper
+ .text          0x100032b4       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100032b4                __aeabi_mem_init
+ .text.memset   0x100032c4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100032c4                __wrap_memset
+ .text.memcpy   0x100032d0        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100032d0                __wrap_memcpy
+                0x100032d0                __wrap___aeabi_memcpy
  .text._out_null
-                0x10003314        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100032dc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10003318       0xac CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100032e0       0xac CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x100033c4      0x1cc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000338c      0x1cc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x10003590       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003558       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x100035a0       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x100035b0      0x4a8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x10003a58      0x57c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003568       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10003578      0x4a8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x10003a20      0x57c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10003fd4      0xbe0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003f9c      0xbe0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10004bb4       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10004bb4                vfctprintf
+                0x10004b7c       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10004b7c                vfctprintf
  .text.weak_raw_vprintf
-                0x10004bd8       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10004bd8                weak_raw_vprintf
- .text._exit    0x10004c08        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x10004c08                _exit
- .text.exit     0x10004c0c        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x10004c0c                exit
+                0x10004ba0       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10004ba0                weak_raw_vprintf
+ .text._exit    0x10004bd0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10004bd0                _exit
+ .text.exit     0x10004bd4        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10004bd4                exit
  .text.runtime_init
-                0x10004c14       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-                0x10004c14                runtime_init
+                0x10004bdc       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x10004bdc                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10004c40       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c08       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x10004c50       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004c18       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10004d00       0x64 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004cc8       0x64 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x10004d64       0xfc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004d64                stdio_put_string
+                0x10004d2c       0xfc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004d2c                stdio_put_string
  .text.stdio_set_driver_enabled
-                0x10004e60       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004e60                stdio_set_driver_enabled
+                0x10004e28       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004e28                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x10004e90        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004e90                stdio_init_all
+                0x10004e58        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004e58                stdio_init_all
  .text.__wrap_putchar
-                0x10004e9c       0x94 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004e9c                __wrap_putchar
-                0x10004e9c                stdio_putchar
+                0x10004e64       0x94 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004e64                __wrap_putchar
+                0x10004e64                stdio_putchar
  .text.__wrap_puts
-                0x10004f30       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004f30                stdio_puts
-                0x10004f30                __wrap_puts
+                0x10004ef8       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004ef8                stdio_puts
+                0x10004ef8                __wrap_puts
  .text.__wrap_vprintf
-                0x10004f6c       0xcc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004f6c                stdio_vprintf
-                0x10004f6c                __wrap_vprintf
+                0x10004f34       0xcc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004f34                stdio_vprintf
+                0x10004f34                __wrap_vprintf
  .text.__wrap_printf
-                0x10005038       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005038                __wrap_printf
-                0x10005038                stdio_printf
+                0x10005000       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10005000                __wrap_printf
+                0x10005000                stdio_printf
  .text.stdio_uart_out_chars
-                0x10005050       0x4c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005018       0x4c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x1000509c       0x90 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x1000509c                stdio_uart_in_chars
+                0x10005064       0x90 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005064                stdio_uart_in_chars
  .text.on_uart_rx
-                0x1000512c       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100050f4       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_out_flush
-                0x10005154       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x1000511c       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x10005168       0x84 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005130       0x84 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x100051ec       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x100051ec                stdio_uart_init
+                0x100051b4       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100051b4                stdio_uart_init
  .text.stdio_uart_init_full
-                0x1000523c       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x1000523c                stdio_uart_init_full
+                0x10005204       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10005204                stdio_uart_init_full
  .text.spi_init
-                0x10005278      0x13c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x10005278                spi_init
+                0x10005240      0x13c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x10005240                spi_init
  .text.hcd_rp2040_irq
-                0x100053b4      0x370 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x1000537c      0x370 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
  .text.hcd_init
-                0x10005724       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005724                hcd_init
+                0x100056ec       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x100056ec                hcd_init
  .text.hcd_port_reset
-                0x10005778        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005778                hcd_port_reset
+                0x10005740        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005740                hcd_port_reset
  .text.hcd_port_reset_end
-                0x1000577c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x1000577c                hcd_port_reset_end
+                0x10005744        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005744                hcd_port_reset_end
  .text.hcd_port_connect_status
-                0x10005780       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005780                hcd_port_connect_status
+                0x10005748       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005748                hcd_port_connect_status
  .text.hcd_port_speed_get
-                0x10005798       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005798                hcd_port_speed_get
+                0x10005760       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005760                hcd_port_speed_get
  .text.hcd_device_close
-                0x100057bc      0x470 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x100057bc                hcd_device_close
+                0x10005784      0x470 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005784                hcd_device_close
  .text.hcd_int_enable
-                0x10005c2c        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005c2c                hcd_int_enable
+                0x10005bf4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005bf4                hcd_int_enable
  .text.hcd_edpt_open
-                0x10005c38      0x234 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005c38                hcd_edpt_open
+                0x10005c00      0x234 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005c00                hcd_edpt_open
  .text.hcd_edpt_xfer
-                0x10005e6c      0x358 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x10005e6c                hcd_edpt_xfer
+                0x10005e34      0x358 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10005e34                hcd_edpt_xfer
  .text.hcd_edpt_abort_xfer
-                0x100061c4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x100061c4                hcd_edpt_abort_xfer
+                0x1000618c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x1000618c                hcd_edpt_abort_xfer
  .text.hcd_setup_send
-                0x100061c8       0xbc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
-                0x100061c8                hcd_setup_send
+                0x10006190       0xbc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10006190                hcd_setup_send
  .text.rp2040_usb_init
-                0x10006284       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x10006284                rp2040_usb_init
+                0x1000624c       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x1000624c                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x100062c4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x100062c4                hw_endpoint_reset_transfer
+                0x1000628c        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x1000628c                hw_endpoint_reset_transfer
  .text.hw_endpoint_start_next_buffer
-                0x100062d0      0x1f4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x100062d0                hw_endpoint_start_next_buffer
+                0x10006298      0x1f4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10006298                hw_endpoint_start_next_buffer
  .text.hw_endpoint_xfer_start
-                0x100064c4       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x100064c4                hw_endpoint_xfer_start
+                0x1000648c       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x1000648c                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x100064d8      0x174 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x100064d8                hw_endpoint_xfer_continue
+                0x100064a0      0x174 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x100064a0                hw_endpoint_xfer_continue
  .text._control_blocking_complete_cb
-                0x1000664c        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006614        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.process_removing_device
-                0x10006654       0xe0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x1000661c       0xe0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.usbh_control_xfer_cb.isra.0
-                0x10006734      0x218 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x100066fc      0x218 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.tuh_event_hook_cb
-                0x1000694c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x1000694c                tuh_event_hook_cb
+                0x10006914        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006914                tuh_event_hook_cb
  .text.tuh_vid_pid_get
-                0x10006950       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10006950                tuh_vid_pid_get
+                0x10006918       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006918                tuh_vid_pid_get
  .text.tuh_speed_get
-                0x10006980       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10006980                tuh_speed_get
+                0x10006948       0x1c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006948                tuh_speed_get
  .text.tuh_rhport_init
-                0x1000699c      0x118 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x1000699c                tuh_rhport_init
+                0x10006964      0x118 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006964                tuh_rhport_init
  .text.tuh_control_xfer
-                0x10006ab4      0x134 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10006ab4                tuh_control_xfer
+                0x10006a7c      0x134 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006a7c                tuh_control_xfer
  .text.enum_new_device.part.0
-                0x10006be8       0x8c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006bb0       0x8c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.tuh_task_ext.part.0
-                0x10006c74      0x240 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006c3c      0x240 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.tuh_task_ext
-                0x10006eb4       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10006eb4                tuh_task_ext
+                0x10006e7c       0x18 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006e7c                tuh_task_ext
  .text.process_enumeration
-                0x10006ecc      0x49c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10006e94      0x49c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .text.usbh_edpt_claim
-                0x10007368       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10007368                usbh_edpt_claim
+                0x10007330       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10007330                usbh_edpt_claim
  .text.usbh_edpt_release
-                0x100073a4       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x100073a4                usbh_edpt_release
+                0x1000736c       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x1000736c                usbh_edpt_release
  .text.usbh_edpt_xfer_with_callback
-                0x100073e0       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x100073e0                usbh_edpt_xfer_with_callback
+                0x100073a8       0x54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x100073a8                usbh_edpt_xfer_with_callback
  .text.tuh_edpt_open
-                0x10007434       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10007434                tuh_edpt_open
+                0x100073fc       0x44 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x100073fc                tuh_edpt_open
  .text.usbh_edpt_busy
-                0x10007478       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x10007478                usbh_edpt_busy
+                0x10007440       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10007440                usbh_edpt_busy
  .text.usbh_driver_set_config_complete
-                0x1000749c      0x12c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
-                0x1000749c                usbh_driver_set_config_complete
+                0x10007464      0x12c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10007464                usbh_driver_set_config_complete
  .text.tusb_time_delay_ms_api
-                0x100075c8        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100075c8                tusb_time_delay_ms_api
+                0x10007590        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10007590                tusb_time_delay_ms_api
  .text.tu_edpt_claim
-                0x100075d0       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100075d0                tu_edpt_claim
+                0x10007598       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10007598                tu_edpt_claim
  .text.tu_edpt_release
-                0x10007620       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10007620                tu_edpt_release
+                0x100075e8       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x100075e8                tu_edpt_release
  .text.tu_edpt_validate
-                0x10007658       0x7c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10007658                tu_edpt_validate
+                0x10007620       0x7c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x10007620                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x100076d4       0x34 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x100076d4                tu_edpt_bind_driver
+                0x1000769c       0x34 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x1000769c                tu_edpt_bind_driver
  .text.tu_desc_get_interface_total_len
-                0x10007708       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x10007708                tu_desc_get_interface_total_len
+                0x100076d0       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x100076d0                tu_desc_get_interface_total_len
  .text.tu_fifo_empty
-                0x10007758       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10007758                tu_fifo_empty
+                0x10007720       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10007720                tu_fifo_empty
  .text.tu_fifo_read
-                0x10007768       0x9c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10007768                tu_fifo_read
+                0x10007730       0x9c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10007730                tu_fifo_read
  .text.tu_fifo_write
-                0x10007804       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x10007804                tu_fifo_write
+                0x100077cc       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x100077cc                tu_fifo_write
  .text.tu_fifo_clear
-                0x100078a8       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x100078a8                tu_fifo_clear
+                0x10007870       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x10007870                tu_fifo_clear
  .text.board_init
-                0x100078e8       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
-                0x100078e8                board_init
+                0x100078b0       0x30 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x100078b0                board_init
  .text.startup._retrieve_unique_id_on_boot
-                0x10007918       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x100078e0       0x10 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.flash_get_unique_id
-                0x10007928       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x10007928                flash_get_unique_id
+                0x100078f0       0x3c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x100078f0                flash_get_unique_id
  .text.xinputh_deinit
-                0x10007964        0x4 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007964                xinputh_deinit
+                0x1000792c        0x4 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x1000792c                xinputh_deinit
  .text.xinputh_init
-                0x10007968       0x18 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007968                xinputh_init
+                0x10007930       0x18 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007930                xinputh_init
  .text.xinputh_open
-                0x10007980      0x12c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007980                xinputh_open
+                0x10007948      0x12c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007948                xinputh_open
  .text.xinputh_close
-                0x10007aac       0x6c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007aac                xinputh_close
+                0x10007a74       0x6c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007a74                xinputh_close
  .text.tuh_xinput_receive_report
-                0x10007b18       0x68 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007b18                tuh_xinput_receive_report
+                0x10007ae0       0x68 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007ae0                tuh_xinput_receive_report
  .text.tuh_xinput_send_report
-                0x10007b80       0x88 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007b80                tuh_xinput_send_report
+                0x10007b48       0x88 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007b48                tuh_xinput_send_report
  .text.xboxone_init
-                0x10007c08      0x124 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007bd0      0x124 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
  .text.xinputh_xfer_cb
-                0x10007d2c      0xb78 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10007d2c                xinputh_xfer_cb
+                0x10007cf4      0xb78 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10007cf4                xinputh_xfer_cb
  .text.xinputh_set_config
-                0x100088a4      0x184 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x100088a4                xinputh_set_config
+                0x1000886c      0x184 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x1000886c                xinputh_set_config
  .text.tuh_xinput_set_led
-                0x10008a28      0x118 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10008a28                tuh_xinput_set_led
+                0x100089f0      0x118 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x100089f0                tuh_xinput_set_led
  .text.tuh_xinput_set_rumble
-                0x10008b40      0x168 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x10008b40                tuh_xinput_set_rumble
- .text.strlen   0x10008ca8       0x5c C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
-                0x10008ca8                strlen
+                0x10008b08      0x168 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10008b08                tuh_xinput_set_rumble
+ .text.strlen   0x10008c70       0x5c C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp\libg.a(libc_a-strlen-stub.o)
+                0x10008c70                strlen
  *(.fini)
- .fini          0x10008d04        0x4 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
-                0x10008d04                _fini
- .fini.__stub   0x10008d08       0x90 linker stubs
+ .fini          0x10008ccc        0x4 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crti.o
+                0x10008ccc                _fini
+ .fini.__stub   0x10008cd0       0x90 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3263,228 +3263,228 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10008d98                        . = ALIGN (0x4)
-                0x10008d98                        PROVIDE (__preinit_array_start = .)
+                0x10008d60                        . = ALIGN (0x4)
+                0x10008d60                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10008d98        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008d98                __pre_init_runtime_init_early_resets
+                0x10008d60        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d60                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10008d9c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008d9c                __pre_init_runtime_init_usb_power_down
+                0x10008d64        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d64                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10008da0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10008d68        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00300
-                0x10008da4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10008d6c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00350
-                0x10008da8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x10008d70        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
  .preinit_array.00350
-                0x10008dac        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+                0x10008d74        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
  .preinit_array.00500
-                0x10008db0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008db0                __pre_init_runtime_init_clocks
+                0x10008d78        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d78                __pre_init_runtime_init_clocks
  .preinit_array.00600
-                0x10008db4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008db4                __pre_init_runtime_init_post_clock_resets
+                0x10008d7c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d7c                __pre_init_runtime_init_post_clock_resets
  .preinit_array.00700
-                0x10008db8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008db8                __pre_init_runtime_init_rp2040_gpio_ie_disable
+                0x10008d80        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d80                __pre_init_runtime_init_rp2040_gpio_ie_disable
  .preinit_array.01000
-                0x10008dbc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008dbc                __pre_init_runtime_init_spin_locks_reset
+                0x10008d84        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d84                __pre_init_runtime_init_spin_locks_reset
  .preinit_array.01100
-                0x10008dc0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10008dc0                __pre_init_runtime_init_mutex
+                0x10008d88        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10008d88                __pre_init_runtime_init_mutex
  .preinit_array.10080
-                0x10008dc4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-                0x10008dc4                __pre_init_runtime_init_install_ram_vector_table
+                0x10008d8c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x10008d8c                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x10008dc8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
-                0x10008dc8                __pre_init_runtime_init_default_alarm_pool
+                0x10008d90        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x10008d90                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x10008dcc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10008dcc                __pre_init_first_per_core_initializer
+                0x10008d94        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10008d94                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x10008dd0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10008dd0                __pre_init_runtime_init_per_core_irq_priorities
+                0x10008d98        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10008d98                __pre_init_runtime_init_per_core_irq_priorities
  *(.preinit_array)
-                0x10008dd4                        PROVIDE (__preinit_array_end = .)
-                0x10008dd4                        . = ALIGN (0x4)
-                0x10008dd4                        PROVIDE (__init_array_start = .)
+                0x10008d9c                        PROVIDE (__preinit_array_end = .)
+                0x10008d9c                        . = ALIGN (0x4)
+                0x10008d9c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.01000
-                0x10008dd4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x10008d9c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  *(.init_array)
- .init_array    0x10008dd8        0x4 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10008ddc                        PROVIDE (__init_array_end = .)
-                0x10008ddc                        . = ALIGN (0x4)
+ .init_array    0x10008da0        0x4 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10008da4                        PROVIDE (__init_array_end = .)
+                0x10008da4                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
                 [!provide]                        PROVIDE (__fini_array_end = .)
  *(.eh_frame*)
- .eh_frame      0x10008ddc        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10008ddc                        . = ALIGN (0x4)
+ .eh_frame      0x10008da4        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10008da4                        . = ALIGN (0x4)
 
-.glue_7         0x10008ddc        0x0
- .glue_7        0x10008ddc        0x0 linker stubs
+.glue_7         0x10008da4        0x0
+ .glue_7        0x10008da4        0x0 linker stubs
 
-.glue_7t        0x10008ddc        0x0
- .glue_7t       0x10008ddc        0x0 linker stubs
+.glue_7t        0x10008da4        0x0
+ .glue_7t       0x10008da4        0x0 linker stubs
 
-.vfp11_veneer   0x10008ddc        0x0
- .vfp11_veneer  0x10008ddc        0x0 linker stubs
+.vfp11_veneer   0x10008da4        0x0
+ .vfp11_veneer  0x10008da4        0x0 linker stubs
 
-.v4_bx          0x10008ddc        0x0
- .v4_bx         0x10008ddc        0x0 linker stubs
+.v4_bx          0x10008da4        0x0
+ .v4_bx         0x10008da4        0x0 linker stubs
 
-.iplt           0x10008ddc        0x0
- .iplt          0x10008ddc        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10008da4        0x0
+ .iplt          0x10008da4        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10008de0      0x700
+.rodata         0x10008da8      0x700
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.tuh_xinput_mount_cb.str1.4
-                0x10008de0      0x3e3 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x10008da8      0x3e3 CMakeFiles/pico_gamepad_host.dir/main.c.obj
                                  0xa6 (size before relaxing)
  .rodata.tuh_xinput_umount_cb.str1.4
-                0x100091c3       0x11 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x1000918b       0x11 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .rodata.tuh_xinput_report_received_cb.str1.4
-                0x100091c3       0x73 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x1000918b       0x73 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .rodata.main.str1.4
-                0x100091c3       0xee CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x1000918b       0xee CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .rodata.str1.4
-                0x100091c3       0x38 CMakeFiles/pico_gamepad_host.dir/main.c.obj
- *fill*         0x100091c3        0x1 
- .rodata.CSWTCH.60
-                0x100091c4       0x10 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x1000918b       0x38 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+ *fill*         0x1000918b        0x1 
+ .rodata.CSWTCH.54
+                0x1000918c       0x10 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .rodata.gip_led_on.2
-                0x100091d4        0x7 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x1000919c        0x7 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .rodata.panic.str1.4
-                0x100091db       0x12 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x100091a3       0x12 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x100091db       0x1b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100091a3       0x1b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x100091db       0x22 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100091a3       0x22 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.hard_assertion_failure.str1.4
-                0x100091db        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x100091a3        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x100091db       0x48 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- *fill*         0x100091db        0x1 
+                0x100091a3       0x48 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ *fill*         0x100091a3        0x1 
  .rodata.__bi_84
-                0x100091dc        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091a4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_78
-                0x100091e8        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091b0        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_54
-                0x100091f4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091bc        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_48
-                0x10009200        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091c8        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_42
-                0x1000920c        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091d4        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_34
-                0x10009218        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091e0        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata.__bi_26
-                0x10009224        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100091ec        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .rodata._ftoa.str1.4
-                0x10009230       0x15 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100091f8       0x15 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata._vsnprintf
-                0x10009230      0x19c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x100093cc        0x4 
+                0x100091f8      0x19c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10009394        0x4 
  .rodata.pow10.0
-                0x100093d0       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10009398       0x50 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.crlf_str.0
-                0x10009420        0x2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100093e8        0x2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.str1.4
-                0x10009422       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- *fill*         0x10009422        0x2 
+                0x100093ea       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ *fill*         0x100093ea        0x2 
  .rodata.__bi_45.4
-                0x10009424        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100093ec        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_49.5
-                0x10009430        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100093f8        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_50.6
-                0x10009438        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x10009400        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.hcd_rp2040_irq.str1.4
-                0x10009440       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10009408       0x40 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
  .rodata.hcd_port_speed_get.str1.4
-                0x10009440        0xf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x10009408        0xf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.str1.4
-                0x10009440       0x1e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10009408       0x1e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x10009440       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x10009408       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .rodata.process_enumeration
-                0x10009440       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x10009408       0x28 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .rodata.str1.4
-                0x10009468        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x10009430        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_153.0
-                0x10009468        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x10009430        0xc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.__bi_163.1
-                0x10009474        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x1000943c        0x8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .rodata.tuh_xinput_set_led.str1.4
-                0x1000947c        0x3 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10009444        0x3 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
  .rodata.usbh_xinput_driver
-                0x1000947c       0x1c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x1000947c                usbh_xinput_driver
+                0x10009444       0x1c CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10009444                usbh_xinput_driver
  .rodata.xbox360w_inquire_present
-                0x10009498        0x4 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x10009460        0x4 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
  .rodata.xboxone_pdp_auth
-                0x1000949c        0x6 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
- *fill*         0x100094a2        0x2 
+                0x10009464        0x6 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+ *fill*         0x1000946a        0x2 
  .rodata.xboxone_pdp_led_on
-                0x100094a4        0x7 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
- *fill*         0x100094ab        0x1 
+                0x1000946c        0x7 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+ *fill*         0x10009473        0x1 
  .rodata.extra_input_packet_init
-                0x100094ac        0x6 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
- *fill*         0x100094b2        0x2 
+                0x10009474        0x6 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+ *fill*         0x1000947a        0x2 
  .rodata.xboxone_s_init
-                0x100094b4       0x13 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
- *fill*         0x100094c7        0x1 
+                0x1000947c       0x13 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+ *fill*         0x1000948f        0x1 
  .rodata.xboxone_power_on
-                0x100094c8        0x5 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
- *fill*         0x100094cd        0x3 
- .rodata        0x100094d0        0xd CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
-                0x100094e0                        . = ALIGN (0x4)
- *fill*         0x100094dd        0x3 
+                0x10009490        0x5 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+ *fill*         0x10009495        0x3 
+ .rodata        0x10009498        0xd CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x100094a8                        . = ALIGN (0x4)
+ *fill*         0x100094a5        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x100094e0                        . = ALIGN (0x4)
+                0x100094a8                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x100094e0                        __exidx_start = .
+                0x100094a8                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x100094e0                        __exidx_end = .
-                0x100094e0                        . = ALIGN (0x4)
-                0x100094e0                        __binary_info_start = .
+                0x100094a8                        __exidx_end = .
+                0x100094a8                        . = ALIGN (0x4)
+                0x100094a8                        __binary_info_start = .
 
-.binary_info    0x100094e0       0x30
+.binary_info    0x100094a8       0x30
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x100094e0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094a8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr78
-                0x100094e4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094ac        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr54
-                0x100094e8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094b0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr48
-                0x100094ec        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094b4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr42
-                0x100094f0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094b8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr34
-                0x100094f4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094bc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr26
-                0x100094f8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+                0x100094c0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
  .binary_info.keep.__bi_ptr163
-                0x100094fc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x100094c4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .binary_info.keep.__bi_ptr153
-                0x10009500        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x100094c8        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr50
-                0x10009504        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100094cc        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr49
-                0x10009508        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100094d0        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr45
-                0x1000950c        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x10009510                        __binary_info_end = .
-                0x10009510                        . = ALIGN (0x4)
+                0x100094d4        0x4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x100094d8                        __binary_info_end = .
+                0x100094d8                        . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3498,7 +3498,7 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x5d0 load address 0x10009510
+.data           0x200000c0      0x5d0 load address 0x100094d8
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3583,23 +3583,23 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x20000690                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x20000690        0x0 load address 0x10009ae0
+                0x20000690        0x0 load address 0x10009aa8
  .tm_clone_table
                 0x20000690        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20000690        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20000690        0x0 load address 0x10009ae0
+.igot.plt       0x20000690        0x0 load address 0x10009aa8
  .igot.plt      0x20000690        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.tdata          0x20000690        0x0 load address 0x10009ae0
+.tdata          0x20000690        0x0 load address 0x10009aa8
                 0x20000690                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000690                        __tdata_end = .
                 0x20000690                        PROVIDE (__data_end__ = .)
-                0x10009510                        __etext = LOADADDR (.data)
+                0x100094d8                        __etext = LOADADDR (.data)
 
-.tbss           0x20000690        0x0 load address 0x10009ae0
+.tbss           0x20000690        0x0 load address 0x10009aa8
                 0x20000690                        . = ALIGN (0x4)
                 0x20000690                        __bss_start__ = .
                 0x20000690                        __tls_base = .
@@ -3607,7 +3607,7 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
  *(.tcommon)
                 0x20000690                        __tls_end = .
 
-.bss            0x20000690      0xd00 load address 0x10009ae0
+.bss            0x20000690      0xd00 load address 0x10009aa8
                 0x20000690                        . = ALIGN (0x4)
                 0x20000690                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3658,7 +3658,7 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x2000132c        0x4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .bss.last_rumble_print.0
                 0x20001330        0x4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
- .bss.last_rumble_send
+ .bss.last_rumble_rx_time
                 0x20001334        0x4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .bss.last_tx_time
                 0x20001338        0x4 CMakeFiles/pico_gamepad_host.dir/main.c.obj
@@ -3694,40 +3694,37 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
                 0x20001389        0x1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .bss.irq_handler_chain_free_slot_head
                 0x2000138a        0x1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.last_sent_big
-                0x2000138b        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
- .bss.last_sent_small
-                0x2000138c        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .bss.led_state
-                0x2000138d        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x2000138b        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .bss.rumble_big
-                0x2000138e        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x2000138c        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .bss.rumble_small
-                0x2000138f        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x2000138d        0x1 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  *(COMMON)
                 0x20001390                        . = ALIGN (0x4)
+ *fill*         0x2000138e        0x2 
                 0x20001390                        __bss_end__ = .
 
-.heap           0x20001390      0x800 load address 0x10009ae0
+.heap           0x20001390      0x800 load address 0x10009aa8
                 0x20001390                        __end__ = .
                 0x20001390                        end = __end__
  *(.heap*)
  .heap          0x20001390      0x800 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
                 0x20040000                        __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000        0x0 load address 0x10009ae0
+.scratch_x      0x20040000        0x0 load address 0x10009aa8
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x10009ae0                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10009aa8                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10009ae0
+.scratch_y      0x20041000        0x0 load address 0x10009aa8
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10009ae0                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10009aa8                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy
  *(.stack1*)
@@ -3739,9 +3736,9 @@ LOAD C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.flash_end      0x10009ae0        0x0
+.flash_end      0x10009aa8        0x0
  *(.embedded_end_block*)
-                0x10009ae0                        PROVIDE (__flash_binary_end = .)
+                0x10009aa8                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -4001,54 +3998,54 @@ LOAD linker stubs
  .comment       0x00000045       0x46 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .comment       0x00000045       0x46 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
-.debug_info     0x00000000    0x39d38
- .debug_info    0x00000000     0x415a CMakeFiles/pico_gamepad_host.dir/main.c.obj
- .debug_info    0x0000415a     0x2421 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x0000657b      0x1bf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_info    0x0000673a      0x9a1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
- .debug_info    0x000070db      0x45c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00007537      0x245 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_info    0x0000777c     0x2233 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x000099af      0x15f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x00009b0e     0x2815 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x0000c323      0x308 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_info    0x0000c62b     0x5065 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x00011690     0x2b37 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x000141c7     0x1983 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x00015b4a     0x2a05 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0001854f      0x4e5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x00018a34      0x248 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_info    0x00018c7c      0x678 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x000192f4      0x1d0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x000194c4      0x21a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x000196de      0x7ea CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_info    0x00019ec8      0x781 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_info    0x0001a649       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x0001a66c       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_info    0x0001a68f       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_info    0x0001a6b2      0x27e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_info    0x0001a930       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_info    0x0001a953       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x0001a977       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_info    0x0001a99a      0x27e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_info    0x0001ac18       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
- .debug_info    0x0001ac3b       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x0001ac5e      0x2b8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_info    0x0001af16     0x22f2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x0001d208       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_info    0x0001d22b      0xbbe CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_info    0x0001dde9     0x1d90 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x0001fb79     0x150c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_info    0x00021085     0x1286 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_info    0x0002230b     0x2619 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
- .debug_info    0x00024924     0x1109 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_info    0x00025a2d     0xa677 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
- .debug_info    0x000300a4     0x2296 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_info    0x0003233a     0x283d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_info    0x00034b77     0x1420 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .debug_info    0x00035f97      0x201 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x00036198     0x177f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x00037917     0x2421 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+.debug_info     0x00000000    0x39d23
+ .debug_info    0x00000000     0x4145 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+ .debug_info    0x00004145     0x2421 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00006566      0x1bf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_info    0x00006725      0x9a1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+ .debug_info    0x000070c6      0x45c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00007522      0x245 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_info    0x00007767     0x2233 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000999a      0x15f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x00009af9     0x2815 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000c30e      0x308 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_info    0x0000c616     0x5065 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0001167b     0x2b37 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x000141b2     0x1983 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x00015b35     0x2a05 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x0001853a      0x4e5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00018a1f      0x248 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_info    0x00018c67      0x678 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x000192df      0x1d0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x000194af      0x21a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x000196c9      0x7ea CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_info    0x00019eb3      0x781 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_info    0x0001a634       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x0001a657       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_info    0x0001a67a       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_info    0x0001a69d      0x27e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_info    0x0001a91b       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_info    0x0001a93e       0x24 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x0001a962       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_info    0x0001a985      0x27e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_info    0x0001ac03       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+ .debug_info    0x0001ac26       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x0001ac49      0x2b8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_info    0x0001af01     0x22f2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0001d1f3       0x23 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_info    0x0001d216      0xbbe CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_info    0x0001ddd4     0x1d90 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x0001fb64     0x150c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_info    0x00021070     0x1286 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_info    0x000222f6     0x2619 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+ .debug_info    0x0002490f     0x1109 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_info    0x00025a18     0xa677 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+ .debug_info    0x0003008f     0x2296 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_info    0x00032325     0x283d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_info    0x00034b62     0x1420 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+ .debug_info    0x00035f82      0x201 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x00036183     0x177f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x00037902     0x2421 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
 .debug_abbrev   0x00000000     0x8614
  .debug_abbrev  0x00000000      0x535 CMakeFiles/pico_gamepad_host.dir/main.c.obj
@@ -4271,196 +4268,196 @@ LOAD linker stubs
                 0x00001538       0x70 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
 .debug_rnglists
-                0x00000000     0x5a97
+                0x00000000     0x5a87
  .debug_rnglists
-                0x00000000      0x588 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                0x00000000      0x578 CMakeFiles/pico_gamepad_host.dir/main.c.obj
  .debug_rnglists
-                0x00000588      0x5ca CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000578      0x5ca CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_rnglists
-                0x00000b52       0x19 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+                0x00000b42       0x19 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
  .debug_rnglists
-                0x00000b6b       0xb6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+                0x00000b5b       0xb6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
  .debug_rnglists
-                0x00000c21       0x58 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000c11       0x58 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .debug_rnglists
-                0x00000c79       0x3d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+                0x00000c69       0x3d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
  .debug_rnglists
-                0x00000cb6      0x37d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000ca6      0x37d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .debug_rnglists
-                0x00001033       0x1f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00001023       0x1f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .debug_rnglists
-                0x00001052      0x325 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00001042      0x325 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
  .debug_rnglists
-                0x00001377       0x2b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x00001367       0x2b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
  .debug_rnglists
-                0x000013a2      0x7dc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+                0x00001392      0x7dc CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
  .debug_rnglists
-                0x00001b7e      0x2c6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00001b6e      0x2c6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .debug_rnglists
-                0x00001e44      0x259 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00001e34      0x259 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .debug_rnglists
-                0x0000209d      0x5be CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000208d      0x5be CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_rnglists
-                0x0000265b       0x5c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000264b       0x5c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .debug_rnglists
-                0x000026b7       0x2b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+                0x000026a7       0x2b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
  .debug_rnglists
-                0x000026e2      0x112 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000026d2      0x112 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_rnglists
-                0x000027f4       0x1f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x000027e4       0x1f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_rnglists
-                0x00002813       0x3d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00002803       0x3d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_rnglists
-                0x00002850       0x4a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+                0x00002840       0x4a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
  .debug_rnglists
-                0x0000289a       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+                0x0000288a       0x20 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
  .debug_rnglists
-                0x000028ba       0x43 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000028aa       0x43 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .debug_rnglists
-                0x000028fd       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+                0x000028ed       0x2c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
  .debug_rnglists
-                0x00002929       0xf9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+                0x00002919       0xf9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
  .debug_rnglists
-                0x00002a22       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+                0x00002a12       0x14 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
  .debug_rnglists
-                0x00002a36       0x99 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+                0x00002a26       0x99 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
  .debug_rnglists
-                0x00002acf       0xe5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+                0x00002abf       0xe5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
  .debug_rnglists
-                0x00002bb4       0x13 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+                0x00002ba4       0x13 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
  .debug_rnglists
-                0x00002bc7       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+                0x00002bb7       0x38 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
  .debug_rnglists
-                0x00002bff       0x25 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00002bef       0x25 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .debug_rnglists
-                0x00002c24      0x2a2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00002c14      0x2a2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .debug_rnglists
-                0x00002ec6       0x1b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
+                0x00002eb6       0x1b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
  .debug_rnglists
-                0x00002ee1       0x85 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+                0x00002ed1       0x85 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
  .debug_rnglists
-                0x00002f66      0x2bb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00002f56      0x2bb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .debug_rnglists
-                0x00003221      0x1ce CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00003211      0x1ce CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .debug_rnglists
-                0x000033ef      0x25f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+                0x000033df      0x25f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .debug_rnglists
-                0x0000364e      0x479 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+                0x0000363e      0x479 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
  .debug_rnglists
-                0x00003ac7      0x139 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00003ab7      0x139 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .debug_rnglists
-                0x00003c00     0x1195 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+                0x00003bf0     0x1195 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
  .debug_rnglists
-                0x00004d95      0x212 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00004d85      0x212 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .debug_rnglists
-                0x00004fa7      0x3d3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00004f97      0x3d3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .debug_rnglists
-                0x0000537a       0xf7 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+                0x0000536a       0xf7 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
  .debug_rnglists
-                0x00005471       0x70 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00005461       0x70 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .debug_rnglists
-                0x000054e1      0x368 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x000054d1      0x368 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .debug_rnglists
-                0x00005849      0x24e CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+                0x00005839      0x24e CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
-.debug_line     0x00000000    0x2a234
- .debug_line    0x00000000     0x1e9b CMakeFiles/pico_gamepad_host.dir/main.c.obj
- .debug_line    0x00001e9b     0x1c7a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00003b15      0x272 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_line    0x00003d87      0x908 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
- .debug_line    0x0000468f      0x4d4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00004b63      0x3b3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_line    0x00004f16     0x17ea CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00006700      0x2de CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000069de     0x1bb7 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00008595      0x415 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x000089aa     0x35b6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x0000bf60     0x1d8f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x0000dcef      0xfc2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x0000ecb1     0x2175 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00010e26      0x513 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00011339      0x33d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_line    0x00011676      0x450 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x00011ac6      0x358 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00011e1e      0x30f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0001212d      0x6f5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_line    0x00012822      0x583 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_line    0x00012da5      0x108 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x00012ead      0x2a9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_line    0x00013156      0x452 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_line    0x000135a8      0x487 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_line    0x00013a2f      0x66d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_line    0x0001409c       0x61 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x000140fd      0x3d2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_line    0x000144cf      0x39c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_line    0x0001486b      0x195 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
- .debug_line    0x00014a00       0x94 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x00014a94      0x1e8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_line    0x00014c7c     0x1cf5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x00016971       0xa2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_line    0x00016a13      0x8db CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_line    0x000172ee     0x14d8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x000187c6      0xe36 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_line    0x000195fc     0x1684 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_line    0x0001ac80     0x2311 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
- .debug_line    0x0001cf91      0xd4e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x0001dcdf     0x6033 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
- .debug_line    0x00023d12     0x1244 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00024f56     0x1a55 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x000269ab      0xb7b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .debug_line    0x00027526      0x652 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x00027b78      0xeb2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x00028a2a     0x180a CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+.debug_line     0x00000000    0x2a20c
+ .debug_line    0x00000000     0x1e73 CMakeFiles/pico_gamepad_host.dir/main.c.obj
+ .debug_line    0x00001e73     0x1c7a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00003aed      0x272 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_line    0x00003d5f      0x908 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+ .debug_line    0x00004667      0x4d4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00004b3b      0x3b3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_line    0x00004eee     0x17ea CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000066d8      0x2de CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x000069b6     0x1bb7 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000856d      0x415 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00008982     0x35b6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x0000bf38     0x1d8f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000dcc7      0xfc2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x0000ec89     0x2175 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00010dfe      0x513 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00011311      0x33d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_line    0x0001164e      0x450 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x00011a9e      0x358 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00011df6      0x30f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00012105      0x6f5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_line    0x000127fa      0x583 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_line    0x00012d7d      0x108 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x00012e85      0x2a9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_line    0x0001312e      0x452 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_line    0x00013580      0x487 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_line    0x00013a07      0x66d CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_line    0x00014074       0x61 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x000140d5      0x3d2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_line    0x000144a7      0x39c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_line    0x00014843      0x195 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+ .debug_line    0x000149d8       0x94 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x00014a6c      0x1e8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_line    0x00014c54     0x1cf5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x00016949       0xa2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_line    0x000169eb      0x8db CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_line    0x000172c6     0x14d8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0001879e      0xe36 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_line    0x000195d4     0x1684 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_line    0x0001ac58     0x2311 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+ .debug_line    0x0001cf69      0xd4e CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x0001dcb7     0x6033 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+ .debug_line    0x00023cea     0x1244 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00024f2e     0x1a55 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x00026983      0xb7b CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+ .debug_line    0x000274fe      0x652 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x00027b50      0xeb2 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x00028a02     0x180a CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
-.debug_str      0x00000000     0x8168
- .debug_str     0x00000000     0x8168 CMakeFiles/pico_gamepad_host.dir/main.c.obj
-                               0x11bd (size before relaxing)
- .debug_str     0x00008168      0xcee CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_str     0x00008168      0x226 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
- .debug_str     0x00008168      0x3a9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
- .debug_str     0x00008168      0x352 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_str     0x00008168      0x265 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
- .debug_str     0x00008168      0xae1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_str     0x00008168      0x231 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_str     0x00008168      0x80c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_str     0x00008168      0x2f1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_str     0x00008168     0x1208 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
- .debug_str     0x00008168      0xa54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_str     0x00008168      0xc63 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_str     0x00008168      0xa37 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_str     0x00008168      0x484 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_str     0x00008168      0x2b3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
- .debug_str     0x00008168      0x378 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_str     0x00008168      0x268 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_str     0x00008168      0x2b8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_str     0x00008168      0x7eb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
- .debug_str     0x00008168      0x4c0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
- .debug_str     0x00008168       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_str     0x00008168       0xb3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
- .debug_str     0x00008168       0xb5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
- .debug_str     0x00008168      0x2e1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
- .debug_str     0x00008168       0xbb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
- .debug_str     0x00008168       0xb9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_str     0x00008168       0xb3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
- .debug_str     0x00008168      0x2c6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
- .debug_str     0x00008168       0xb9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
- .debug_str     0x00008168       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_str     0x00008168      0x427 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
- .debug_str     0x00008168      0x50a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_str     0x00008168       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
- .debug_str     0x00008168      0x7a1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
- .debug_str     0x00008168      0xddf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_str     0x00008168      0xf42 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_str     0x00008168      0x77a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .debug_str     0x00008168      0xe83 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
- .debug_str     0x00008168      0x7fa CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_str     0x00008168     0x1ef5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
- .debug_str     0x00008168      0xfcb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_str     0x00008168      0x64f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_str     0x00008168      0xddd CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
- .debug_str     0x00008168      0x297 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_str     0x00008168      0x7d0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_str     0x00008168      0xf64 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
+.debug_str      0x00000000     0x814d
+ .debug_str     0x00000000     0x814d CMakeFiles/pico_gamepad_host.dir/main.c.obj
+                               0x11a2 (size before relaxing)
+ .debug_str     0x0000814d      0xcee CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x0000814d      0x226 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+ .debug_str     0x0000814d      0x3a9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/hardware_claim/claim.c.obj
+ .debug_str     0x0000814d      0x352 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x0000814d      0x265 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+ .debug_str     0x0000814d      0xae1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x0000814d      0x231 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x0000814d      0x80c CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x0000814d      0x2f1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_str     0x0000814d     0x1208 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x0000814d      0xa54 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x0000814d      0xc63 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x0000814d      0xa37 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x0000814d      0x484 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x0000814d      0x2b3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+ .debug_str     0x0000814d      0x378 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x0000814d      0x268 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x0000814d      0x2b8 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x0000814d      0x7eb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+ .debug_str     0x0000814d      0x4c0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+ .debug_str     0x0000814d       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x0000814d       0xb3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+ .debug_str     0x0000814d       0xb5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
+ .debug_str     0x0000814d      0x2e1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+ .debug_str     0x0000814d       0xbb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+ .debug_str     0x0000814d       0xb9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x0000814d       0xb3 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
+ .debug_str     0x0000814d      0x2c6 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+ .debug_str     0x0000814d       0xb9 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+ .debug_str     0x0000814d       0xb0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x0000814d      0x427 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+ .debug_str     0x0000814d      0x50a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x0000814d       0xa4 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
+ .debug_str     0x0000814d      0x7a1 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+ .debug_str     0x0000814d      0xddf CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x0000814d      0xf42 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_str     0x0000814d      0x77a CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .debug_str     0x0000814d      0xe83 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/hcd_rp2040.c.obj
+ .debug_str     0x0000814d      0x7fa CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_str     0x0000814d     0x1ef5 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/host/usbh.c.obj
+ .debug_str     0x0000814d      0xfcb CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_str     0x0000814d      0x64f CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_str     0x0000814d      0xddd CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+ .debug_str     0x0000814d      0x297 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_str     0x0000814d      0x7d0 CMakeFiles/pico_gamepad_host.dir/G_/PowerA_Controller_Project/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_str     0x0000814d      0xf64 CMakeFiles/pico_gamepad_host.dir/lib/tusb_xinput/xinput_host.c.obj
 
 .debug_frame    0x00000000     0x3084
  .debug_frame   0x00000000      0x118 CMakeFiles/pico_gamepad_host.dir/main.c.obj
