@@ -25,7 +25,16 @@
       "Bash(python \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/bin_to_uf2.py\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.bin\" \"g:/PowerA Controller Project/PowerA_Xbox_One_Modd_New/PowerA_Xbox_One_Mod/build/pico_gamepad_host.uf2\")",
       "Bash(python -c ':*)",
       "Bash(python build.py --clean)",
-      "Bash(python build.py)"
+      "Bash(python build.py)",
+      "Bash(mkdir -p docs)",
+      "Bash(mv \"image.png\" \"docs/nrf24l01_pinout.png\")",
+      "Bash(mv \"image copy.png\" \"docs/pico_pinout.png\")",
+      "Bash(rm implementation_plan.md walkthrough.md Wireless_Controller_Guide.md bin_to_uf2.py)",
+      "Bash(mv NRF20L1_DIP.png docs/nrf24l01_dip_pinout.png)",
+      "Bash(mv NRF52840.jfif docs/nicenano_nrf52840.jfif)",
+      "Bash(mv RP2040_Pico.jfif docs/pico_rp2040.jfif)",
+      "Bash(mv Mini-NRF24L01-SMD-1.jpg docs/nrf24l01_module_1.jpg)",
+      "Bash(mv Mini-NRF24L01-SMD-3.jpg docs/nrf24l01_module_2.jpg)"
     ]
   }
 }
