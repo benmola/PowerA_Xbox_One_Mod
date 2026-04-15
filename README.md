@@ -315,12 +315,50 @@ module can be added.
     │  (Add 100 µF capacitor across VCC and GND on the PCB side)     │
     └─────────────────────────────────────────────────────────────────┘
 
-Physical pin arrangement (top view, antenna facing away):
+Physical pin arrangement — MODULE (DIP, 2×4, 2.54 mm pitch, top view, antenna facing away):
 
     IRQ  ○ ○  MISO
     MOSI ○ ○  SCK
     CSN  ○ ○  CE
     VCC  ○ ○  GND
+
+Physical pin arrangement — BARE IC (QFN-20, 4 mm × 4 mm SMD, 0.5 mm pitch, top view):
+
+    Pin 1 marker (●) is at bottom-left corner of the package.
+    Pins count counter-clockwise (standard QFN).
+
+                          ── top edge ──
+              ┌──────────────────────────────────┐
+              │  [15]  [14]  [13]  [12]  [11]    │
+              │  ANT2  VSS   IREF  VDD   VSS      │
+              │                                   │
+    ANT1 [16] │                                   │ [10] XC1
+     VSS [17] │          (exposed pad              │ [ 9] XC2
+     VDD [18] │          = VSS/GND                │ [ 8] VSS
+    DVDD [19] │           solder to ground)        │ [ 7] VDD
+     VDD [20] │                                   │ [ 6] IRQ
+              │                                   │
+              │  [ 1]  [ 2]  [ 3]  [ 4]  [ 5]    │
+              │  CE●   CSN   SCK   MOSI  MISO     │
+              └──────────────────────────────────┘
+                          ── bottom edge ──
+
+    Connections to Pico (same 6 signals as the module, different package):
+      [1]  CE   ──────────────────────────────────► GP16 (pin 21)
+      [2]  CSN  ──────────────────────────────────► GP17 (pin 22)
+      [3]  SCK  ──────────────────────────────────► GP2  (pin  4)
+      [4]  MOSI ──────────────────────────────────► GP3  (pin  5)
+      [5]  MISO ◄──────────────────────────────── GP4  (pin  6)
+      [6]  IRQ  ──  not connected
+
+    Power/decoupling for PCB layout:
+      [7],[12],[18],[20] VDD  ──► 3.3 V (decouple each with 100 nF to VSS)
+      [8],[11],[14],[17] VSS  ──► GND
+      [19] DVDD ──► 100 nF ──► VSS  (digital supply decoupling, place close to chip)
+      Exposed centre pad ──► GND pour (must be soldered for thermal/electrical)
+      [9],[10] XC2/XC1 ──► 16 MHz crystal (if used; many modules use internal RC oscillator)
+      [13] IREF ──► 22 kΩ ──► VSS  (sets reference current)
+      [15],[16] ANT2/ANT1 ──► matched antenna / balun (see RF layout guidelines)
 ```
 
 ### 4.3 Receiver — Nice!Nano (NRF52840)
