@@ -257,63 +257,48 @@ module can be added.
 
 ## 4. Wiring
 
-### 4.1 Transmitter — Complete Wiring (Current Prototyping Setup)
+### 4.1 Transmitter — Full Wiring Overview
 
 ```
-                           Xbox Controller (PowerA GIP)
-                           ┌─────────────────────────┐
-                           │    USB-A connector       │
-                           └───────────┬─────────────┘
-                                       │ controller USB cable
-                                       │ + USB-C to USB-A female OTG adapter
-                                       │
-          ┌────────────────────────────┼────────────────────────────────────────────┐
-          │               Raspberry Pi Pico (RP2040, USB-C board)                   │
-          │                            │                                            │
-          │          USB-C port ◄──────┘  (HOST mode — Pico drives 5V to controller)│
-          │                                                                         │
-          │  GP0  [UART0 TX] (pin  1) ─────────────────────────────► USB-TTL RX   │
-          │  GP1  [UART0 RX] (pin  2) ◄───────────────────────────── USB-TTL TX   │
-          │                                                                         │
-          │  GP2  [SPI0 SCK ] (pin  4) ────────────────────────────► NRF SCK      │
-          │  GP3  [SPI0 MOSI] (pin  5) ────────────────────────────► NRF MOSI     │
-          │  GP4  [SPI0 MISO] (pin  6) ◄──────────────────────────── NRF MISO     │
-          │  GP16 [CE       ] (pin 21) ────────────────────────────► NRF CE       │
-          │  GP17 [CSN      ] (pin 22) ────────────────────────────► NRF CSN      │
-          │                                                                         │
-          │  3V3 OUT          (pin 36) ────────────────────────────► NRF VCC      │
-          │  GND              (pin 38) ────────────────────────────► NRF GND      │
-          │  GND              (pin 38) ────────────────────────────► USB-TTL GND  │
-          │  GND              (pin 38) ────────────────────────────► charger GND  │
-          │                                                                         │
-          │  VBUS             (pin 40) ◄───────────── Phone charger +5V (USB-A)   │
-          │                      (prototyping power — see §4.4 for battery swap)   │
-          └─────────────────────────────────────────────────────────────────────────┘
-
-> Note: VBUS (pin 40) powers the Pico via its internal Schottky diode to the VSYS
-> rail.  The same VBUS line also supplies 5V to the controller through the OTG adapter.
-> See §4.4 for how this changes when a battery is fitted.
+  Phone Charger (USB-A)            Raspberry Pi Pico (RP2040)
+  ┌──────────────────────┐         ┌──────────────────────────────────────┐
+  │  +5V  ───────────────│─────────│ VBUS              (pin 40)           │
+  │  GND  ───────────────│─────────│ GND               (pin 38)           │
+  └──────────────────────┘         │                                      │
+                                   │  USB-C port  [HOST MODE] ────────────│──► Xbox controller
+  USB-TTL Adapter (optional)       │  (Pico drives 5V to the controller)  │    USB-A cable
+  ┌──────────────────────┐         │                                      │    + OTG adapter
+  │  RX  ────────────────│─────────│ GP0  UART TX      (pin  1)           │
+  │  TX  ────────────────│─────────│ GP1  UART RX      (pin  2)           │
+  │  GND ────────────────│─────────│ GND               (pin 38)           │
+  └──────────────────────┘         │                                      │
+                                   │  3V3 OUT          (pin 36) ──────────│──► NRF VCC   ─┐
+                                   │  GND              (pin 38) ──────────│──► NRF GND    │
+                                   │  GP2  SPI SCK     (pin  4) ──────────│──► NRF SCK    │ see
+                                   │  GP3  SPI MOSI    (pin  5) ──────────│──► NRF MOSI   │ §4.2
+                                   │  GP4  SPI MISO    (pin  6) ◄─────────│─── NRF MISO   │ for
+                                   │  GP16 CE          (pin 21) ──────────│──► NRF CE     │ pin
+                                   │  GP17 CSN         (pin 22) ──────────│──► NRF CSN    │ detail
+                                   │                                      │   IRQ  n/c  ──┘
+                                   └──────────────────────────────────────┘
 ```
 
 ### 4.2 NRF24L01+ Module — Pin Detail
 
 ```
-    NRF24L01+ (8-pin, 2×4, 2.54mm pitch)
-    ┌─────────────────────────────────────────────────────────────────┐
-    │     (antenna end)                                               │
-    │                                                                 │
-    │  IRQ  ●───── not connected                                      │
-    │  MOSI ●───────────────────────────────────────────► GP3  (pin 5) Pico │
-    │  CSN  ●───────────────────────────────────────────► GP17 (pin 22) Pico│
-    │  VCC  ●───────────────────────────────────────────► 3V3  (pin 36) Pico│
-    │                         (MUST be 3.3V — 5V destroys the module)       │
-    │  MISO ●◄──────────────────────────────────────────── GP4  (pin 6) Pico│
-    │  SCK  ●◄──────────────────────────────────────────── GP2  (pin 4) Pico│
-    │  CE   ●◄──────────────────────────────────────────── GP16 (pin 21) Pico│
-    │  GND  ●───────────────────────────────────────────► GND  (pin 38) Pico│
-    │                                                                 │
-    │  (Add 100 µF capacitor across VCC and GND on the PCB side)     │
-    └─────────────────────────────────────────────────────────────────┘
+  Raspberry Pi Pico (RP2040)               NRF24L01+ Module (8-pin, 2.54 mm pitch)
+  ┌──────────────────────────────┐          ┌────────────────────────────────────────┐
+  │  3V3 OUT       (pin 36)  ────│──────────│ VCC   ← 3.3 V ONLY  (5 V = instant death) │
+  │  GND           (pin 38)  ────│──────────│ GND                                    │
+  │  GP2  SPI SCK   (pin  4) ────│──────────│ SCK                                    │
+  │  GP3  SPI MOSI  (pin  5) ────│──────────│ MOSI                                   │
+  │  GP4  SPI MISO  (pin  6) ◄───│──────────│ MISO                                   │
+  │  GP16 CE        (pin 21) ────│──────────│ CE                                     │
+  │  GP17 CSN       (pin 22) ────│──────────│ CSN                                    │
+  │                              │  (n/c)   │ IRQ   — leave unconnected              │
+  └──────────────────────────────┘          └────────────────────────────────────────┘
+  ! Add 100 µF capacitor across VCC–GND close to the module.
+```
 
 Physical pin arrangement — MODULE (DIP, 2×4, 2.54 mm pitch, top view, antenna facing away):
 
@@ -366,111 +351,86 @@ Physical pin arrangement — BARE IC (QFN-20, 4 mm × 4 mm SMD, 0.5 mm pitch, to
 No external radio module required — the NRF52840 has a built-in 2.4 GHz radio.
 
 ```
-                      Nice!Nano (NRF52840)
-                      ┌──────────────────────────────────┐
-      PC USB ─────────│ USB-C port                       │
-                      │  ← powers the board (5V → 3.3V) │
-                      │  → XInput gamepad to Windows     │
-                      │    (xusb22.sys, no drivers)      │
-                      │                                  │
-                      │ D11  [UART1 TX] (P0.06) ─────────│──► USB-TTL RX  }
-                      │ D30  [UART1 RX] (P0.22) ◄────────│─── USB-TTL TX  } optional
-                      │ GND             ─────────────────│──► USB-TTL GND } debug
-                      │                                  │
-                      │ [Built-in 2.4 GHz RADIO] ~~~~~~~~~~~~~~~~~~~~~ ESB link
-                      │  RX addr: E7:E7:E7:E7:E7        │    to Pico NRF24L01+
-                      │  TX addr: D2:D2:D2:D2:D2        │
-                      └──────────────────────────────────┘
+  PC                          Nice!Nano (NRF52840)
+  ┌──────────────┐             ┌──────────────────────────────────────────────────┐
+  │              │             │                                                  │
+  │  USB port  ──│─────────────│ USB-C port                                       │
+  │  (USB-A/C)   │             │  ← powers board  (5V → 3.3V regulated)          │
+  └──────────────┘             │  → Xbox 360 XInput gamepad to Windows            │
+                               │    VID 0x045E / PID 0x028E  (xusb22.sys)        │
+                               │                                                  │
+  USB-TTL Adapter (optional)   │  D11  UART TX  (P0.06) ─────────────────────────│──► RX  ┐
+  ┌──────────────────────┐     │  D30  UART RX  (P0.22) ◄────────────────────────│─── TX  │ debug
+  │  RX  ────────────────│─────│                                                  │        │ serial
+  │  TX  ────────────────│─────│                                                  │        │
+  │  GND ────────────────│─────│  GND ───────────────────────────────────────────│──► GND ┘
+  └──────────────────────┘     │                                                  │
+                               │  [Built-in 2.4 GHz RADIO]                       │
+                               │   RX pipe 0:  E7:E7:E7:E7:E7  (gamepad in)      │ ~~~~~ ESB ~~~~~
+                               │   TX address: D2:D2:D2:D2:D2  (rumble out)      │  to Pico NRF24L01+
+                               └──────────────────────────────────────────────────┘
 ```
 
 ---
 
-### 4.4 Dual Mode — DPDT Switch (Optional Modification)
+### 4.4 Dual Mode — DPDT Switch (Optional)
 
-A DPDT (Double Pole Double Throw) switch lets you switch the controller between
-wired and wireless modes without unplugging anything.  Only the USB data lines
-(D+/D−) are switched — power and ground are always connected.
-
-```
-Controller USB cable wire colours:
-  Red   (+5V)   always connected — charges battery / powers circuit
-  Black (GND)   always connected
-  Green (D+)    switched by DPDT → position determines wired or wireless
-  White (D-)    switched by DPDT → position determines wired or wireless
-
-                      DPDT Slide Switch
-                 ┌────────────────────────────┐
-  Controller     │                            │
-  D+ (green) ────│── COM-A ───── POS1 ────────│──► PC USB cable D+   (WIRED)
-                 │               \            │
-                 │                POS2 ───────│──► Pico USB-C D+      (WIRELESS)
-                 │                            │
-  Controller     │                            │
-  D- (white) ────│── COM-B ───── POS1 ────────│──► PC USB cable D-   (WIRED)
-                 │               \            │
-                 │                POS2 ───────│──► Pico USB-C D-      (WIRELESS)
-                 └────────────────────────────┘
-
-Note: In current prototyping the switch is omitted — plug/unplug cables manually.
-```
-
-**Full wiring with DPDT switch and power bus:**
+Switches the controller between **wired** (direct to PC) and **wireless** (to Pico) mode.
+Only the data lines (D+/D−) are switched.  Power lines (+5V/GND) are always connected.
 
 ```
-Controller USB cable
- ├── RED   (+5V) ──────────────────────────────────────────────────────────────┐
- ├── BLACK (GND) ──────────────────────────────────────────────────────────────┤
- ├── GREEN (D+ ) ──► DPDT COM-A ──► POS1 ──► External USB-A to PC (D+)        │
- │                              ──► POS2 ──► OTG adapter → Pico USB-C (D+)     │
- └── WHITE (D- ) ──► DPDT COM-B ──► POS1 ──► External USB-A to PC (D-)        │
-                                ──► POS2 ──► OTG adapter → Pico USB-C (D-)     │
-                                                                                │ 5V always on
-                              ┌─────────────────────────────────────────────────┘
-                              │
-                              ├──────────────────────────────────► Pico VBUS (pin 40)
-                              │                                    [powers Pico + controller]
-                              └──────────────────────────────────► TP5400 IN+ (charges battery)
+  Controller                                                               Destinations
+  USB Cable              DPDT Switch
+  ┌────────────────┐     ┌────────────────────────────────────────────────────────────────┐
+  │ Red   (+5V) ───│─────│── always on ───────────────────────────────────────────────────│──► PC USB +5V
+  │ Black (GND) ───│─────│── always on ───────────────────────────────────────────────────│──► PC USB GND
+  │                │     │                                                                │
+  │ Green (D+ ) ───│─────│ COM-A ──── POS-1  (switch to WIRED)   ─────────────────────── │──► PC USB D+
+  │                │     │       ──── POS-2  (switch to WIRELESS) ─────────────────────── │──► Pico USB-C D+
+  │                │     │                                                                │
+  │ White (D- ) ───│─────│ COM-B ──── POS-1  (switch to WIRED)   ─────────────────────── │──► PC USB D-
+  │                │     │       ──── POS-2  (switch to WIRELESS) ─────────────────────── │──► Pico USB-C D-
+  └────────────────┘     └────────────────────────────────────────────────────────────────┘
+
+  Note: prototyping omits the switch — just plug/unplug the cables manually.
 ```
 
 ---
 
-### 4.5 Power Wiring — Prototyping vs Battery Build
+### 4.5 Power — Prototyping vs Battery Build
 
 ```
-PROTOTYPING (current setup):
-─────────────────────────────────────────────────────────────────────────────
-  Phone charger (USB-A)
-  ┌────────────────────┐
-  │ +5V (pin 1 USB-A)  │──────────────────────────────► Pico VBUS  (pin 40)
-  │ GND (pin 4 USB-A)  │──────────────────────────────► Pico GND   (pin 38)
-  └────────────────────┘
-  Inside the Pico: VBUS ──[Schottky diode ~0.3V drop]──► VSYS rail ──► RP2040
+  PROTOTYPING (current):
 
-  VBUS also powers the controller via the USB host circuit (both at 5V).
-
-
-BATTERY BUILD (future):
-─────────────────────────────────────────────────────────────────────────────
-  LiPo (3.7V)         TP5400 Charge+Boost Module
-  ┌─────────────┐     ┌─────────────────────────────────────────────────────┐
-  │ + (red)  ───│─────│► B+                                                 │
-  │ - (black)───│─────│► B-             5V OUT (+) ─────────► Pico VSYS (pin 39)
-  └─────────────┘     │                5V OUT (-) ─────────► Pico GND  (pin 38)
-                      │ USB-C IN ◄── charging cable (any USB source)        │
-                      └─────────────────────────────────────────────────────┘
-  Single wiring change vs prototyping: +5V moves from VBUS (pin 40) to VSYS (pin 39).
-  VSYS powers the RP2040 directly without a diode — cleaner and more efficient.
-  The USB host circuit generates VBUS for the controller from VSYS automatically.
+  Phone Charger (USB-A)          Raspberry Pi Pico (RP2040)
+  ┌──────────────────┐           ┌──────────────────────────────────────────┐
+  │  +5V  ───────────│───────────│ VBUS              (pin 40)               │
+  │  GND  ───────────│───────────│ GND               (pin 38)               │
+  └──────────────────┘           │  internal: VBUS ──[Schottky ~0.3V]──► VSYS ──► RP2040 │
+                                 │  VBUS also supplies 5V to controller     │
+                                 └──────────────────────────────────────────┘
 
 
-MODE COMPARISON:
-─────────────────────────────────────────────────────────────────────────────
-  Mode                  Controller power  Pico power       Battery
-  ─────────────────     ───────────────   ──────────────   ─────────────────
-  Wired + USB cable     5V from cable     Not needed       Charging via TP5400
-  Wireless + cable      5V via OTG        VBUS or VSYS     Charging via TP5400
-  Wireless, no cable    5V from boost     VSYS via battery Discharging
+  BATTERY BUILD (future):
+
+  LiPo Cell           TP5400 Module              Raspberry Pi Pico (RP2040)
+  ┌───────────┐        ┌──────────────────┐       ┌──────────────────────────────────────────┐
+  │ B+ (red) ─│────────│ B+               │       │                                          │
+  │ B- (blk) ─│────────│ B-  5V OUT (+) ──│───────│ VSYS              (pin 39)               │
+  └───────────┘        │     5V OUT (-) ──│───────│ GND               (pin 38)               │
+                       │ USB-C IN ◄───────│── any USB charging cable                         │
+                       └──────────────────┘       │  internal: VSYS ──► RP2040 directly      │
+                                                  │  RP2040 generates VBUS for controller    │
+                                                  └──────────────────────────────────────────┘
+
+  Only change vs prototyping: wire moves from VBUS (pin 40) → VSYS (pin 39).
 ```
+
+| Mode | Controller power | Pico power | Battery |
+|---|---|---|---|
+| Wired + USB cable | 5V from cable | not needed | charging via TP5400 |
+| Wireless + cable | 5V via OTG | VBUS or VSYS | charging via TP5400 |
+| Wireless, no cable | 5V from boost | VSYS via battery | discharging |
 
 ---
 
