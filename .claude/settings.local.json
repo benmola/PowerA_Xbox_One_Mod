@@ -34,7 +34,8 @@
       "Bash(mv NRF52840.jfif docs/nicenano_nrf52840.jfif)",
       "Bash(mv RP2040_Pico.jfif docs/pico_rp2040.jfif)",
       "Bash(mv Mini-NRF24L01-SMD-1.jpg docs/nrf24l01_module_1.jpg)",
-      "Bash(mv Mini-NRF24L01-SMD-3.jpg docs/nrf24l01_module_2.jpg)"
+      "Bash(mv Mini-NRF24L01-SMD-3.jpg docs/nrf24l01_module_2.jpg)",
+      "Bash(python -c ' *)"
     ]
   }
 }
